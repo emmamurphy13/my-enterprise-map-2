@@ -1,60 +1,29 @@
-<!--
-@component
-SiteHeader.svelte — NYCity News Service Style Header
--->
 <script>
+  import { base } from '$app/paths';
+
   let {
     navLinks = [
-      {
-        label: 'Arts & Culture',
-        href: 'https://www.nycitynewsservice.com/nycns_topics/arts-culture/',
-      },
-      {
-        label: 'Business',
-        href: 'https://www.nycitynewsservice.com/nycns_topics/business/',
-      },
-      {
-        label: 'Education',
-        href: 'https://www.nycitynewsservice.com/nycns_topics/education/',
-      },
-      {
-        label: 'Environment',
-        href: 'https://www.nycitynewsservice.com/nycns_topics/environment/',
-      },
-      {
-        label: 'Health',
-        href: 'https://www.nycitynewsservice.com/nycns_topics/health/',
-      },
-      {
-        label: 'Housing',
-        href: 'https://www.nycitynewsservice.com/nycns_topics/housing/',
-      },
-      {
-        label: 'Politics',
-        href: 'https://www.nycitynewsservice.com/nycns_topics/politics/',
-      },
+      { label: 'Economy', href: 'https://issuenumberone.journalism.cuny.edu/category/economy/' },
+      { label: 'Featured', href: 'https://issuenumberone.journalism.cuny.edu/category/featured/' },
+      { label: 'Immigration', href: 'https://issuenumberone.journalism.cuny.edu/category/immigration/' },
+      { label: 'Jobs', href: 'https://issuenumberone.journalism.cuny.edu/category/jobs/' },
+      { label: 'Manufacturing', href: 'https://issuenumberone.journalism.cuny.edu/category/manufacturing/' },
+      { label: 'Oil and Gas', href: 'https://issuenumberone.journalism.cuny.edu/category/oil-and-gas/' },
     ],
   } = $props();
 </script>
 
 <header class="site-header">
-  <!-- Compact masthead with logo left and nav right -->
   <div class="masthead-wrapper">
     <div class="masthead">
-      <a
-        href="https://www.nycitynewsservice.com/"
-        class="logo"
-        aria-label="NYCity News Service"
-      >
-        <!-- Compact HTML/CSS Logo with thin white border -->
-        <span class="logo-text">
-          <span class="logo-nycity">NYCITY</span><span class="logo-news-service"
-            >News Service</span
-          >
-        </span>
+      <a href={`${base}/`} class="logo" aria-label="Issue Number One">
+        <img
+          src="http://cdn.nycitynewsservice.com/blogs.dir/423/files/2017/03/issue_logo.png"
+          alt="Issue Number One"
+          class="logo-img"
+        />
       </a>
 
-      <!-- Navigation inline with logo -->
       {#if navLinks.length > 0}
         <nav class="main-nav" aria-label="Main navigation">
           <ul class="nav-list">
@@ -74,40 +43,20 @@ SiteHeader.svelte — NYCity News Service Style Header
   @use '../../styles' as *;
 
   .site-header {
-    border-bottom: 0px solid var(--color-accent);
-    box-shadow: 0 2px 4px var(--color-shadow);
+    border-bottom: 1px solid #d9d9d9;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
   }
 
-  /* Full-width blue background with animated dark-to-light gradient */
   .masthead-wrapper {
-    background: linear-gradient(
-      90deg,
-      var(--color-cuny-blue-dark) 0%,
-      var(--color-accent) 50%,
-      var(--color-cuny-blue-light) 100%
-    );
-    background-size: 200% 100%;
-    animation: gradient-sweep 6s ease-in-out infinite;
+    background: #ffffff;
   }
 
-  @keyframes gradient-sweep {
-    0% {
-      background-position: 0% 0%;
-    }
-    50% {
-      background-position: 100% 0%;
-    }
-    100% {
-      background-position: 0% 0%;
-    }
-  }
-
-  /* Compact Masthead - Mobile: centered */
   .masthead {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: var(--spacing-xs) var(--spacing-sm);
+    justify-content: space-between;
+    gap: var(--spacing-md);
+    padding: var(--spacing-sm) var(--spacing-md);
     max-width: var(--max-width-wide);
     margin: 0 auto;
   }
@@ -115,43 +64,20 @@ SiteHeader.svelte — NYCity News Service Style Header
   .logo {
     display: inline-block;
     text-decoration: none;
+    flex-shrink: 0;
   }
 
   .logo:hover {
+    opacity: 0.85;
     text-decoration: none;
   }
 
-  .logo-text {
-    display: inline-flex;
-    align-items: stretch;
-    border: 1px solid var(--color-white);
+  .logo-img {
+    height: 54px;
+    width: auto;
+    display: block;
   }
 
-  .logo-nycity {
-    background-color: var(--color-white);
-    color: var(--color-accent);
-    font-family: var(--font-sans);
-    font-size: var(--font-size-sm);
-    font-weight: var(--font-weight-extrabold);
-    padding: var(--logo-padding-mobile);
-    letter-spacing: var(--letter-spacing-wide);
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-  }
-
-  .logo-news-service {
-    color: var(--color-white);
-    font-family: var(--font-sans);
-    font-size: var(--font-size-sm);
-    font-weight: var(--font-weight-light);
-    padding: var(--logo-padding-mobile);
-    letter-spacing: var(--letter-spacing-tight);
-    display: flex;
-    align-items: center;
-  }
-
-  /* Navigation - hidden on mobile */
   .main-nav {
     display: none;
   }
@@ -166,11 +92,11 @@ SiteHeader.svelte — NYCity News Service Style Header
   }
 
   .nav-link {
-    color: var(--color-white);
+    color: var(--color-dark);
     text-decoration: none;
     font-family: var(--font-sans);
     font-size: var(--font-size-xs);
-    font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-normal);
     text-transform: uppercase;
     letter-spacing: var(--letter-spacing-wide);
     white-space: nowrap;
@@ -178,31 +104,20 @@ SiteHeader.svelte — NYCity News Service Style Header
   }
 
   .nav-link:hover {
-    color: var(--color-white);
-    opacity: var(--opacity-hover);
+    color: var(--color-accent);
     text-decoration: none;
   }
 
-  /* Desktop styles - show nav, space-between layout, larger logo */
   @include desktop {
-    .masthead {
-      justify-content: space-between;
-      padding: var(--font-size-xs) var(--spacing-md);
-    }
-
-    .logo-nycity {
-      font-size: var(--font-size-base);
-      padding: var(--logo-padding-desktop);
-    }
-
-    .logo-news-service {
-      font-size: var(--font-size-base);
-      padding: var(--logo-padding-desktop);
-    }
-
     .main-nav {
       display: flex;
       align-items: center;
+    }
+  }
+
+  @include tablet {
+    .masthead {
+      padding-inline: var(--spacing-sm);
     }
   }
 </style>

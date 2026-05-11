@@ -1,18 +1,18 @@
-/* Global styles for NYCity News Service style site */
-/* These apply to every page */
-
 /* ---------- SCSS Imports ---------- */
 @use '$lib/styles' as *;
 
-/* ---------- Google Fonts ---------- */
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Droid+Sans:wght@400;700&display=swap');
+/* ---------- Google Fonts (display + serif + ui sans) ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Archivo+Narrow:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Global styles for NYCity News Service style site */
+/* These apply to every page */
 
 /* ===========================================
    CSS Custom Properties
    =========================================== */
 :root {
   /* NYCity News Service Colors */
-  --color-accent: #0033a1; /* CUNY Blue (PMS 286) */
+  --color-accent: #555555;
   --color-dark: #1a1a1a;
   --color-text: #333333;
   --color-white: #ffffff;
@@ -21,15 +21,14 @@
   --color-border: #e0e0e0;
   --color-shadow: rgba(0, 0, 0, 0.1);
 
-  /* CUNY Blue Gradient Colors */
-  --color-cuny-blue-dark: #002266;
-  --color-cuny-blue-light: #0066cc;
+  /* Gradient Colors (gray scale) */
+  --color-cuny-blue-dark: #1a1a1a;
+  --color-cuny-blue-light: #777777;
 
   /* Typography */
-  --font-serif: 'PT Serif', Georgia, 'Times New Roman', Times, serif;
-  --font-sans:
-    'Droid Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --font-display: 'Archivo Narrow', 'Archivo', sans-serif;
+  --font-serif: 'Archivo', sans-serif;
+  --font-sans: 'Archivo', sans-serif;
 
   /* Root Font Sizes */
   --font-size-root: 16px;
@@ -103,6 +102,8 @@
 
   /* Border Radius */
   --border-radius-sm: 8px;
+  --border-radius-md: 12px;
+  --border-radius-lg: 16px;
 
   /* Transitions */
   --transition-color: color 0.2s ease;
@@ -188,6 +189,7 @@ h3 {
 
 p {
   margin-bottom: var(--spacing-sm);
+  font-family: var(--font-sans);
 }
 
 a {

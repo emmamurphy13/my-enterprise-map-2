@@ -21,8 +21,10 @@ USAGE EXAMPLE:
 <style lang="scss">
   .byline {
     font-family: var(--font-sans);
-    font-size: var(--font-size-base);
-    color: var(--color-medium-gray);
-    margin: var(--spacing-xxs) 0;
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-normal);
+    color: var(--color-dark);
+    margin: 0;
+    letter-spacing: 0;
   }
 </style>

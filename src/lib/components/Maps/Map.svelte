@@ -38,6 +38,9 @@ USAGE EXAMPLE:
     longitude = -74.006, // Map center longitude (default: NYC)
     latitude = 40.7128, // Map center latitude
     zoom = 10, // Initial zoom level (0–22)
+    minZoom = 0, // Minimum zoom level (prevents zooming out past this)
+    maxZoom = 22, // Maximum zoom level
+    maxBounds = null, // Restrict panning: [[west, south], [east, north]]
     theme = 'liberty', // Basemap theme: 'liberty' | 'bright' | 'positron' | 'fiord' | 'dark'
     interactive = true, // Allow panning and zooming
     border = false, // Show an accent border around the map
@@ -93,6 +96,9 @@ USAGE EXAMPLE:
           style: styleUrl,
           center: [longitude, latitude],
           zoom,
+          minZoom,
+          maxZoom,
+          ...(maxBounds ? { maxBounds } : {}),
           interactive,
           attributionControl: credit ? false : { compact: true },
         });
@@ -180,6 +186,9 @@ USAGE EXAMPLE:
     margin: var(--spacing-sm) 0;
     padding: 0;
     width: 100%;
+    max-width: none;
+    margin-left: 0;
+    margin-right: auto;
 
     @include tablet {
       margin: var(--spacing-sm) 0;

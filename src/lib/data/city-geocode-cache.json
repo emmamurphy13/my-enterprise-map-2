@@ -1,0 +1,476 @@
+{
+  "alamo|GA": [
+    -82.7788838,
+    32.1470777
+  ],
+  "alberta township|MN": [
+    -93.9468145,
+    45.7821077
+  ],
+  "allen|TX": [
+    -96.6705503,
+    33.1031744
+  ],
+  "altona|NY": [
+    -73.6595353,
+    44.8888475
+  ],
+  "ansonia|CT": [
+    -73.0441144,
+    41.3434295
+  ],
+  "anthony city|NM": [
+    -106.6080205,
+    32.0080205
+  ],
+  "argyle|NY": [
+    -73.4912162,
+    43.2378488
+  ],
+  "aurora|TX": [
+    -97.511071,
+    33.0595799
+  ],
+  "avon town|IN": [
+    -86.4089531,
+    39.7640757
+  ],
+  "ballwin city|MO": [
+    -90.5387762,
+    38.5961803
+  ],
+  "benton|AR": [
+    -94.2670404,
+    36.3456186
+  ],
+  "binghamton|NY": [
+    -75.9125187,
+    42.098698
+  ],
+  "blooming grove|NY": [
+    -74.1951475,
+    41.4092605
+  ],
+  "borough of bergenfield|NJ": null,
+  "brockton|MA": [
+    -71.0183787,
+    42.0834335
+  ],
+  "burlington town|IN": [
+    -85.7490957,
+    38.3265318
+  ],
+  "calhoun city|MO": null,
+  "cambridge|NY": [
+    -73.4392637,
+    43.007994
+  ],
+  "canton township|PA": [
+    -80.2999373,
+    40.2012965
+  ],
+  "chesterton town|IN": [
+    -87.0625791,
+    41.6118729
+  ],
+  "claybanks township|MI": [
+    -86.4387512,
+    43.5158964
+  ],
+  "clinton township|OH": [
+    -83.033965,
+    39.9967105
+  ],
+  "cocoa beach city|FL": [
+    -80.6102211,
+    28.3175914
+  ],
+  "constantine|MI": [
+    -85.6686026,
+    41.8411603
+  ],
+  "conway|AR": [
+    -92.4398402,
+    35.0891932
+  ],
+  "cornish|OK": [
+    -97.5969708,
+    34.1589827
+  ],
+  "coulter city of|IA": [
+    -112.071472,
+    33.519238
+  ],
+  "county of broome new york|NY": [
+    -75.9066983,
+    42.1023144
+  ],
+  "creola|LA": [
+    -92.4798151,
+    31.4278685
+  ],
+  "dimmitt|TX": [
+    -102.315305,
+    34.5488229
+  ],
+  "dix|NY": [
+    -75.4621192,
+    43.1656251
+  ],
+  "dubuque|IA": [
+    -90.6647985,
+    42.5006243
+  ],
+  "duncanville|TX": [
+    -96.9083366,
+    32.6518004
+  ],
+  "elgin|TX": [
+    -97.371118,
+    30.3495084
+  ],
+  "ellery|NY": [
+    -79.3559218,
+    42.2072546
+  ],
+  "escobares|TX": [
+    -98.9624516,
+    26.4107699
+  ],
+  "fairburn|GA": [
+    -84.5810418,
+    33.5670562
+  ],
+  "fairfax|VA": [
+    -77.3063733,
+    38.8462236
+  ],
+  "fairfield city of|IA": [
+    -87.9596663,
+    43.1289177
+  ],
+  "florien|LA": [
+    -93.4573959,
+    31.4437889
+  ],
+  "folden township|MN": [
+    -95.4596175,
+    46.2382894
+  ],
+  "frankford city|MO": [
+    -91.3210466,
+    39.4932544
+  ],
+  "frankfort city|IN": null,
+  "fresno|CA": [
+    -119.78483,
+    36.7394421
+  ],
+  "germantown|WI": [
+    -88.1103691,
+    43.2286174
+  ],
+  "grand blanc charter township|MI": [
+    -83.6664999,
+    42.916257
+  ],
+  "greeneville town|TN": null,
+  "greenfield|MA": [
+    -72.6002068,
+    42.5876342
+  ],
+  "greer|SC": [
+    -82.2272119,
+    34.9381361
+  ],
+  "hartselle|AL": [
+    -86.9352842,
+    34.4434282
+  ],
+  "hinesville|GA": [
+    -81.5960705,
+    31.8477347
+  ],
+  "homer township|MN": [
+    -91.5404682,
+    43.9857849
+  ],
+  "hoxie|AR": [
+    -90.9750717,
+    36.0504339
+  ],
+  "hull|WI": [
+    -89.6019437,
+    44.5552885
+  ],
+  "hunnewell city|MO": null,
+  "ithaca|NY": [
+    -76.5483724,
+    42.4374175
+  ],
+  "johnson city|TN": [
+    -82.352903,
+    36.3167671
+  ],
+  "johnstown|PA": [
+    -78.9219698,
+    40.3267407
+  ],
+  "key west city|FL": [
+    -81.633483,
+    28.1256445
+  ],
+  "knoxville city|IL": null,
+  "leonore village|IL": null,
+  "lexington-fayette urban county|KY": [
+    -84.4970393,
+    38.0464066
+  ],
+  "lodi|NY": [
+    -76.8224557,
+    42.6139597
+  ],
+  "long beach town|IN": [
+    -86.8508351,
+    41.745924
+  ],
+  "lookout mountain|GA": [
+    -85.3577363,
+    34.9775758
+  ],
+  "loves park city|IL": [
+    -89.0462173,
+    42.3141858
+  ],
+  "macy town|IN": null,
+  "marshall|WI": [
+    -89.0643334,
+    43.1677006
+  ],
+  "martinsburg city of|IA": null,
+  "menifee|CA": [
+    -117.1778599,
+    33.6863987
+  ],
+  "midway city|KY": [
+    -84.6839137,
+    38.1507999
+  ],
+  "millersburg|OR": [
+    -123.061482,
+    44.680955
+  ],
+  "milltown|WI": [
+    -92.5069044,
+    45.5267463
+  ],
+  "monmouth|OR": [
+    -123.2290777,
+    44.8486414
+  ],
+  "moorpark city|CA": [
+    -118.8258782,
+    34.2973995
+  ],
+  "mount pleasant|TX": [
+    -94.9694007,
+    33.1570582
+  ],
+  "nappanee city|IN": [
+    -86.0044505,
+    41.441872
+  ],
+  "nassawadox|VA": [
+    -75.8582639,
+    37.4748573
+  ],
+  "new albany|IN": [
+    -85.8241312,
+    38.2856247
+  ],
+  "new chicago town|IN": null,
+  "north charleston city|SC": [
+    -79.9508072,
+    32.8059556
+  ],
+  "north liberty city of|IA": [
+    -88.2677119,
+    42.0496467
+  ],
+  "north middletown city|KY": null,
+  "oakland park city|FL": [
+    -85.6900341,
+    30.1688447
+  ],
+  "olanta|SC": [
+    -79.9325705,
+    33.9354381
+  ],
+  "oxford charter township|MI": [
+    -83.275795,
+    42.8397967
+  ],
+  "panama city beach city|FL": [
+    -85.8136401,
+    30.1940759
+  ],
+  "paris|ID": [
+    -111.4032297,
+    42.2340495
+  ],
+  "pocopson township|PA": [
+    -75.6605172,
+    39.9090209
+  ],
+  "polo city|IL": [
+    -89.577739,
+    41.9852737
+  ],
+  "provo|UT": [
+    -111.6587085,
+    40.2337289
+  ],
+  "rancho palos verdes city|CA": null,
+  "ray township|MI": [
+    -82.9204872,
+    42.761
+  ],
+  "reeves|LA": [
+    -93.0476536,
+    30.5210332
+  ],
+  "richhill township|PA": [
+    -80.4542968,
+    39.9173486
+  ],
+  "richmond|MA": [
+    -73.3678063,
+    42.3723379
+  ],
+  "rupert|ID": [
+    -113.677234,
+    42.6190756
+  ],
+  "ruston|LA": [
+    -92.6386604,
+    32.5297498
+  ],
+  "rutland town|VT": [
+    -73.0114438,
+    43.6047689
+  ],
+  "saginaw|TX": [
+    -97.3639068,
+    32.8601275
+  ],
+  "san carlos city|CA": [
+    -122.2555841,
+    37.511522
+  ],
+  "san luis|AZ": [
+    -114.7741731,
+    32.499227
+  ],
+  "saugerties|NY": [
+    -73.9529126,
+    42.0775906
+  ],
+  "scipio township|MI": [
+    -84.651212,
+    42.0351984
+  ],
+  "scott|WI": [
+    -88.1003554,
+    43.5782156
+  ],
+  "somerville|MA": [
+    -71.0994968,
+    42.3875968
+  ],
+  "south hill|VA": [
+    -78.1291308,
+    36.7265449
+  ],
+  "southampton|NY": [
+    -72.3897131,
+    40.8842482
+  ],
+  "st joseph|MO": [
+    -94.8466322,
+    39.7686055
+  ],
+  "st paul town|IN": null,
+  "stilwell|OK": [
+    -94.6286156,
+    35.814431
+  ],
+  "summerfield|NC": [
+    -79.9047583,
+    36.2087468
+  ],
+  "talty|TX": [
+    -96.385539,
+    32.683187
+  ],
+  "tarpon springs city|FL": [
+    -82.7503953,
+    28.1360553
+  ],
+  "tucson|AZ": [
+    -110.974847,
+    32.2228765
+  ],
+  "twin lakes township|MN": [
+    -92.4891046,
+    46.6454512
+  ],
+  "villa hills city|KY": null,
+  "walnut ridge|AR": [
+    -90.9561004,
+    36.0680241
+  ],
+  "weir|TX": [
+    -97.5877588,
+    30.6749876
+  ],
+  "wellsville|NY": [
+    -77.9480013,
+    42.1217938
+  ],
+  "west hartford|CT": [
+    -72.7420399,
+    41.7620447
+  ],
+  "west peoria city|IL": [
+    -89.7916974,
+    40.6940446
+  ],
+  "westford|WI": [
+    -88.9411867,
+    43.5017165
+  ],
+  "wetumpka|AL": [
+    -86.2045442,
+    32.5378668
+  ],
+  "wheeling village|IL": [
+    -87.9310944,
+    42.138889
+  ],
+  "wichita city|KS": [
+    -97.3309187,
+    37.792655
+  ],
+  "wilmington|MA": [
+    -71.1736669,
+    42.5464828
+  ],
+  "winslow|AZ": [
+    -110.6973463,
+    35.0241984
+  ],
+  "yuma|AZ": [
+    -114.6198088,
+    32.7254216
+  ]
+}

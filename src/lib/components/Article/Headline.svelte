@@ -22,15 +22,19 @@ USAGE EXAMPLE:
   @use '../../styles' as *;
 
   .headline {
-    font-family: var(--font-serif);
-    font-size: var(--font-size-5xl);
-    font-weight: var(--font-weight-bold);
-    line-height: var(--leading-tight);
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5.5vw, 3.75rem);
+    font-weight: 600;
+    line-height: 1.1;
     color: var(--color-dark);
-    margin-bottom: var(--spacing-sm);
+    margin: 1rem 0 0.6rem 0;
+    letter-spacing: -0.015em;
+    text-align: center;
 
     @include tablet {
-      font-size: var(--font-size-6xl);
+      font-size: clamp(2.75rem, 5.5vw, 4.5rem);
+      text-align: left;
+      margin-left: 0;
     }
   }
 </style>

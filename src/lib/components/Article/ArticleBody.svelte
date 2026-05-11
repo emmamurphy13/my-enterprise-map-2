@@ -59,9 +59,10 @@ USAGE EXAMPLE:
   /* Mobile-first: smaller text */
   .article-body {
     font-family: var(--font-sans);
-    font-size: var(--font-size-base);
-    line-height: var(--leading-relaxed);
+    font-size: 1rem;
+    line-height: 1.75;
     color: var(--color-text);
+    max-width: 42rem;
   }
 
   /* Paragraph styling */
@@ -160,8 +161,8 @@ USAGE EXAMPLE:
   /* Tablet and up: larger text */
   @include tablet {
     .article-body {
-      font-size: var(--font-size-lg);
-      line-height: var(--leading-loose);
+      font-size: 1.0625rem;
+      line-height: 1.8;
     }
 
     .article-body :global(blockquote) {

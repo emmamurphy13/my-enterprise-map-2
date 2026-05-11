@@ -5,7 +5,6 @@ Shown when SvelteKit encounters a page that doesn't exist.
 -->
 <script>
   import { page } from '$app/state';
-  import { base } from '$app/paths';
 </script>
 
 <svelte:head>

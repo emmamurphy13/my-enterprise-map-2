@@ -1,0 +1,31 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.2622655,
+          32.928987
+        ]
+      },
+      "properties": {
+        "projectId": "TPN-283548",
+        "recipientId": "RCP-053271",
+        "recipientName": "Coosa County, Al,",
+        "state": "AL",
+        "recipientType": "Local Government",
+        "projectName": "Goodwater Volunteer Fire Department Facility",
+        "completionStatus": "Completed less than 50%",
+        "categoryGroup": "6-Revenue Replacement",
+        "category": "6.1-Provision of Government Services",
+        "description": "This project is to support a funding agreement with the Goodwater Volunteer Fire Department for the construction of new facility to provide more immediate services to its citizens and to provide an additional polling location in the Goodwater area to facilitate fair and equitable elections.",
+        "totalObligations": 100000,
+        "totalExpenditures": 0,
+        "coordinateSource": "county-centroid",
+        "jitterIndex": 0
+      }
+    }
+  ]
+}

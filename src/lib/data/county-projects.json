@@ -1,0 +1,1677 @@
+[
+  {
+    "countyFips": "33015",
+    "countyName": "Rockingham",
+    "state": "NH",
+    "projects": [
+      {
+        "projectId": "TPN-176294",
+        "recipientId": "RCP-036120",
+        "recipientName": "Rockingham County, New Hampshire",
+        "projectName": "New Municipal Building",
+        "state": "NH",
+        "completionStatus": "Completed 50% or more",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "Part of Revenue Replacement funds dedicated towards the construction of a new municipal building, which will include the following:\\n1. Relocation of the overcrowded (especially the Dispatch Center) Sheriff's Office to a proper location.\\n2. Relocation of the County Attorney's Office, where there is severe overcrowding, notably with the County Attorneys' offices (2-3 per small office).\\n3. Relocation of the Registry of Deeds - there have been severe mold, sceptic and other water and HVAC issues at the State-owned courthouse where this department (and County Attorney's Office) is located.\\n4. A new Community Corrections facility that will provide 90-day inhouse treatment for Mental Health and Substance Abuse services.\\nCosts incurred to this project shall be for labor and some of the materials associated with the project.  The adopted budget and other figures increased after the 2023 lost revenue calculation was completed.",
+        "totalObligations": 25863088,
+        "totalExpenditures": 25863088
+      }
+    ],
+    "totalObligations": 25863088,
+    "totalExpenditures": 25863088,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "27037",
+    "countyName": "Dakota",
+    "state": "MN",
+    "projects": [
+      {
+        "projectId": "TPN-105523",
+        "recipientId": "RCP-036149",
+        "recipientName": "Dakota County, Minnesota",
+        "projectName": "South St Paul Library",
+        "state": "MN",
+        "completionStatus": "Completed 50% or more",
+        "expenditureCategoryGroup": "2-Negative Economic Impacts",
+        "expenditureCategory": "2.37-Economic Impact Assistance: Other",
+        "description": "The library construction project will create the County\\u2019s tenth branch library location at at 131 7th Ave. N. within the City of South St. Paul.  The 16,100 square foot building has the support of local stakeholders. It will include meeting rooms, workspaces and technology not available at the almost 100-year old library which it will replace.  The new building will improve access to services for a community that is on average lower income and more diverse than the county and the state as a whole.  The services the library will offer will greatly benefit the residents of South St. Paul, all of Dakota County, and surrounding areas.  This new library, part of the Dakota County Library system, will respond to critical needs in the community, including in the areas of health care, employment, and workforce development.  The new building will also provide public access to the internet for purposes including work, education, and health monitoring.  Design began in August of 2021 and will continue with administrative support through construction.  Construction began on September 29th, 2022 and will conclude into late 2023.  Internal fit out and collection installation will occur in early 2024 with a Q1-24 public opening.",
+        "totalObligations": 10470499,
+        "totalExpenditures": 9456583
+      }
+    ],
+    "totalObligations": 10470499,
+    "totalExpenditures": 9456583,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "01115",
+    "countyName": "St. Clair",
+    "state": "AL",
+    "projects": [
+      {
+        "projectId": "TPN-096731",
+        "recipientId": "RCP-038110",
+        "recipientName": "St. Clair County, Alabama",
+        "projectName": "New Jail Pell City",
+        "state": "AL",
+        "completionStatus": "Completed",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "To be used to help pay for New Jail Construction Project",
+        "totalObligations": 9470302,
+        "totalExpenditures": 9470302
+      }
+    ],
+    "totalObligations": 9470302,
+    "totalExpenditures": 9470302,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "47063",
+    "countyName": "Hamblen",
+    "state": "TN",
+    "projects": [
+      {
+        "projectId": "TPN-030014",
+        "recipientId": "RCP-039267",
+        "recipientName": "Hamblen County, Tennessee",
+        "projectName": "Revenue Loss - Jail and Justice Center Project - Project 1",
+        "state": "TN",
+        "completionStatus": "Completed",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "The Jail and Justice Center Project will aid in the completion of a new jail and justice center.",
+        "totalObligations": 7500000,
+        "totalExpenditures": 7500000
+      }
+    ],
+    "totalObligations": 7500000,
+    "totalExpenditures": 7500000,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "36067",
+    "countyName": "Onondaga",
+    "state": "NY",
+    "projects": [
+      {
+        "projectId": "TPN-255980",
+        "recipientId": "RCP-035872",
+        "recipientName": "Onondaga County, New York",
+        "projectName": "Aquarium",
+        "state": "NY",
+        "completionStatus": "Completed",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "The Onondaga County Aquarium will be a state-of-the-art facility located on the bank of the Syracuse Inner Harbor. This approximately 76,000 sq ft facility will hold up to 550,000 gallons of water to showcase 21 signature exhibits and 9-10 jewel tanks. The saltwater and freshwater exhibits will be interactive, educational, and entertaining.",
+        "totalObligations": 6616643,
+        "totalExpenditures": 6616643
+      }
+    ],
+    "totalObligations": 6616643,
+    "totalExpenditures": 6616643,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "12095",
+    "countyName": "Orange",
+    "state": "FL",
+    "projects": [
+      {
+        "projectId": "TPN-003296",
+        "recipientId": "RCP-035896",
+        "recipientName": "Orange County, Florida",
+        "projectName": "Fire Station #80",
+        "state": "FL",
+        "completionStatus": "Completed",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "The project is for the construction of a 3-Bay Fire Station to replace the existing station located at 1841 Bonneville Dr, Orlando, FL 32826. The current station is a prefabricated metal building constructed in 1973. This building has exceeded its functional lifespan and no longer provides an optimal working and living environment for first responders. The design for the new fire station #80 was funded from Orange County. The project is complete.",
+        "totalObligations": 6517623,
+        "totalExpenditures": 6517623
+      }
+    ],
+    "totalObligations": 6517623,
+    "totalExpenditures": 6517623,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "05143",
+    "countyName": "Washington",
+    "state": "AR",
+    "projects": [
+      {
+        "projectId": "TPN-191109",
+        "recipientId": "RCP-035940",
+        "recipientName": "County Of Washington, Ar",
+        "projectName": "Emergency Operations Center Construction",
+        "state": "AR",
+        "completionStatus": "Completed 50% or more",
+        "expenditureCategoryGroup": "1-Public Health",
+        "expenditureCategory": "1.14-Other Public Health Services",
+        "description": "Washington County has been without an Emergency Operations Center for several years and wishes to use the remaining unobligated ARPA funds for the construction of a new Emergency Operations Center for the benefit of all Washington County citizens. (I'm unsure of the total capital expenditures for this project)",
+        "totalObligations": 5857233,
+        "totalExpenditures": 5054073
+      }
+    ],
+    "totalObligations": 5857233,
+    "totalExpenditures": 5054073,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "29077",
+    "countyName": "Greene",
+    "state": "MO",
+    "projects": [
+      {
+        "projectId": "TPN-099701",
+        "recipientId": "RCP-036080",
+        "recipientName": "County Of Greene, Missouri",
+        "projectName": "Ozark Empire Fair New Arena & Youth Education Center",
+        "state": "MO",
+        "completionStatus": "Completed",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "The Ozark Empire Fairgrounds New Arena and Youth Agricultural Education center will serve people in Greene County and throughout the Ozarks by offering a space for entertainment, events, community organizations, youth organizations, sporting events, and educational opportunities. The center will include a seating capacity of 6,200, restaurant and large meeting area, 93,000 square foot arena, and a 30,000 square foot lower-level Youth Education Center. Further, the center provides an enhanced space for crisis responses and community outreach. Previously, OEFEC has provided their facilities for COVID-19 vaccinations and testing.\\n\\tThe construction of the new facility will provide jobs for people working in a variety of different sectors. Further, the arena will create additional employment for the local workforce due to the need for employees to help with its operations. Currently, OEFEC hosts hundreds of events annually, infusing millions of dollars into the economy. Once completed, this project will boost revenues in the economy by hosting trade shows, indoor winter events, indoor festivals, livestock shows, motorsports, roller derbies, and rodeos.  Funding will go toward the portion of construction for youth education, emergency crisis response, and community meeting spaces.  These funds are coming from the County's loss revenue designation because this recipient serves the County's underserved rural population. \\nClose to 42% of the County's population resides outside of Springfield, MO.",
+        "totalObligations": 5000000,
+        "totalExpenditures": 5000000
+      }
+    ],
+    "totalObligations": 5000000,
+    "totalExpenditures": 5000000,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "48479",
+    "countyName": "Webb",
+    "state": "TX",
+    "projects": [
+      {
+        "projectId": "TPN-060333",
+        "recipientId": "RCP-036178",
+        "recipientName": "Webb County, Texas",
+        "projectName": "Southern Fire Station",
+        "state": "TX",
+        "completionStatus": "Completed less than 50%",
+        "expenditureCategoryGroup": "1-Public Health",
+        "expenditureCategory": "1.7-Other COVID-19 Public Health Expenses (including Communications Enforcement Isolation/Quarantine)",
+        "description": "Webb County will construct a new Fire Station. Webb County has issued designated contract for architectural services for this project and is issued a NTP on October 11, 2022. Currently the project is under construction with Quantum Corp who was properly procureed as the construction on May 13, 2024 and is ongoing and nearing completion by October 2025.",
+        "totalObligations": 4710343,
+        "totalExpenditures": 4710343
+      }
+    ],
+    "totalObligations": 4710343,
+    "totalExpenditures": 4710343,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "40109",
+    "countyName": "Oklahoma",
+    "state": "OK",
+    "projects": [
+      {
+        "projectId": "TPN-172230",
+        "recipientId": "RCP-036144",
+        "recipientName": "Oklahoma County, Oklahoma",
+        "projectName": "Revenue Replacement",
+        "state": "OK",
+        "completionStatus": "Completed",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "Oklahoma County elected to take the $10,000,000 standard allowance for Revenue Replace. The County has utilized $4.5M of the $10M allowance to purchase the land they intend to build the Medical and Behavioral Health Facility that will services the detainee population at the new County Jail site. The remaining land on the lot will be used to house the new jail site.",
+        "totalObligations": 4500000,
+        "totalExpenditures": 4500000
+      }
+    ],
+    "totalObligations": 4500000,
+    "totalExpenditures": 4500000,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "01081",
+    "countyName": "Lee",
+    "state": "AL",
+    "projects": [
+      {
+        "projectId": "TPN-258595",
+        "recipientId": "RCP-038894",
+        "recipientName": "Lee County, Alabama",
+        "projectName": "East Alabama Healthcare Authority Mental Health Center",
+        "state": "AL",
+        "completionStatus": "Completed less than 50%",
+        "expenditureCategoryGroup": "1-Public Health",
+        "expenditureCategory": "1.12-Mental Health Services",
+        "description": "This project is to provide mental health services to citizens in the county by contributing to the construction of a new mental health center. This new mental health center will provide additional inpatient bed space, including educational space for minor patients, and resources for outpatient treatment. This project will be carried out through a subrecipient, the East Alabama Healthcare Authority.",
+        "totalObligations": 4131607,
+        "totalExpenditures": 2000000
+      }
+    ],
+    "totalObligations": 4131607,
+    "totalExpenditures": 2000000,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "37119",
+    "countyName": "Mecklenburg",
+    "state": "NC",
+    "projects": [
+      {
+        "projectId": "TPN-112643",
+        "recipientId": "RCP-036020",
+        "recipientName": "Mecklenburg County, North Carolina",
+        "projectName": "Miracle of Cedar Street Campaign",
+        "state": "NC",
+        "completionStatus": "Completed",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "Build a new facility to provide 166 new beds for homeless men seeking treatment",
+        "totalObligations": 3000000,
+        "totalExpenditures": 3000000
+      }
+    ],
+    "totalObligations": 3000000,
+    "totalExpenditures": 3000000,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "34041",
+    "countyName": "Warren",
+    "state": "NJ",
+    "projects": [
+      {
+        "projectId": "TPN-183726",
+        "recipientId": "RCP-040249",
+        "recipientName": "Warren County, New Jersey",
+        "projectName": "Construction of  a New Human Services Building",
+        "state": "NJ",
+        "completionStatus": "Completed",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "This project will provide partial funding of a construction of new Human Services building.",
+        "totalObligations": 2988266,
+        "totalExpenditures": 2988266
+      }
+    ],
+    "totalObligations": 2988266,
+    "totalExpenditures": 2988266,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "12081",
+    "countyName": "Manatee",
+    "state": "FL",
+    "projects": [
+      {
+        "projectId": "TPN-177235",
+        "recipientId": "RCP-036004",
+        "recipientName": "Manatee County, Florida",
+        "projectName": "6.1-JulyMWST",
+        "state": "FL",
+        "completionStatus": "Completed 50% or more",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "Design and build  a new EMS Station  in the Moccasin Wallow area of Manatee County.  The demand for increased public safety and public health services is a direct result of population growth in Northern Manatee County.  Outside contractors will be used to perform this construction project and the building of an EMS station is a traditional government service.",
+        "totalObligations": 2898358,
+        "totalExpenditures": 2211307
+      }
+    ],
+    "totalObligations": 2898358,
+    "totalExpenditures": 2211307,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "27147",
+    "countyName": "Steele",
+    "state": "MN",
+    "projects": [
+      {
+        "projectId": "TPN-057436",
+        "recipientId": "RCP-037286",
+        "recipientName": "Steele County, MN",
+        "projectName": "Community Corrections Building Addition",
+        "state": "MN",
+        "completionStatus": "Completed",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "The Board approved to build a new building next to the County Attorney's building to house the Community Corrections department for better efficiency.",
+        "totalObligations": 2650000,
+        "totalExpenditures": 2650000
+      }
+    ],
+    "totalObligations": 2650000,
+    "totalExpenditures": 2650000,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "13291",
+    "countyName": "Union",
+    "state": "GA",
+    "projects": [
+      {
+        "projectId": "TPN-057222",
+        "recipientId": "RCP-039500",
+        "recipientName": "Union County, GA",
+        "projectName": "Fire Station 13",
+        "state": "GA",
+        "completionStatus": "Completed",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "Build a new fire station with an ambulance bay and office for Sheriff's deputies. The purpose of this project is to build a new fire station with ambulance bays to serve the expanded population of the north end of the county. The outcome is to have shorter response times to emergencies in the most populated area of the county.",
+        "totalObligations": 2596106,
+        "totalExpenditures": 2596106
+      }
+    ],
+    "totalObligations": 2596106,
+    "totalExpenditures": 2596106,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "12109",
+    "countyName": "St. Johns",
+    "state": "FL",
+    "projects": [
+      {
+        "projectId": "TPN-116767",
+        "recipientId": "RCP-036116",
+        "recipientName": "St. Johns County, Florida",
+        "projectName": "SW SR 207 Fire Station",
+        "state": "FL",
+        "completionStatus": "Completed",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "Supplement costs associated with construction of new fire station on SR 207",
+        "totalObligations": 2500000,
+        "totalExpenditures": 2500000
+      }
+    ],
+    "totalObligations": 2500000,
+    "totalExpenditures": 2500000,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "12103",
+    "countyName": "Pinellas",
+    "state": "FL",
+    "projects": [
+      {
+        "projectId": "TPN-104883",
+        "recipientId": "RCP-039781",
+        "recipientName": "Pinellas County, Florida",
+        "projectName": "Palm Harbor Fire Station 68",
+        "state": "FL",
+        "completionStatus": "Completed",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "Construction of a new fire station.",
+        "totalObligations": 2500000,
+        "totalExpenditures": 2500000
+      }
+    ],
+    "totalObligations": 2500000,
+    "totalExpenditures": 2500000,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "37155",
+    "countyName": "Robeson",
+    "state": "NC",
+    "projects": [
+      {
+        "projectId": "TPN-239170",
+        "recipientId": "RCP-037626",
+        "recipientName": "Robeson County, North Carolina",
+        "projectName": "Career and Technical Center",
+        "state": "NC",
+        "completionStatus": "Completed",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "The Public Schools of Robeson County (PSRC) is constructing a new school that will focus on educating students in the trades.  This will be a small step to help reduce the nationwide shortage of skilled workers.  This portion represents the money Robeson County is required to contribute to the project.",
+        "totalObligations": 2500000,
+        "totalExpenditures": 2500000
+      }
+    ],
+    "totalObligations": 2500000,
+    "totalExpenditures": 2500000,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "21151",
+    "countyName": "Madison",
+    "state": "KY",
+    "projects": [
+      {
+        "projectId": "TPN-254502",
+        "recipientId": "RCP-039602",
+        "recipientName": "Madison County, Kentucky",
+        "projectName": "Fire Station",
+        "state": "KY",
+        "completionStatus": "Not Started",
+        "expenditureCategoryGroup": "1-Public Health",
+        "expenditureCategory": "1.14-Other Public Health Services",
+        "description": "The construction of a new fire station in Northern Madison County is a critical investment in public safety and infrastructure that aligns directly with the goals of the American Rescue Plan Act (ARPA). This proposal should address urgent needs in the region, strengthen community resilience, and provide lasting benefits to residents.\\n\\nSouthern Madison Water District's project came in under budget.  Accordingly, the County re-allocated money from Southern Madison Water District to fund its fire station construction project.  Both projects were fully obligated prior to December 31, 2024.",
+        "totalObligations": 2390400,
+        "totalExpenditures": 0
+      }
+    ],
+    "totalObligations": 2390400,
+    "totalExpenditures": 0,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "48475",
+    "countyName": "Ward",
+    "state": "TX",
+    "projects": [
+      {
+        "projectId": "TPN-139912",
+        "recipientId": "RCP-038605",
+        "recipientName": "Ward County, TX",
+        "projectName": "Ward County Jail and Sheriff's Office",
+        "state": "TX",
+        "completionStatus": "Completed 50% or more",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "Construction of new jail and sheriff's office, including medical area and special cells for inmates who have contagious diseases so the air is vented out of the facility.  We awarded the bid on February 12, 2024. The Project to began April 20, 2024 and is scheduled to end August 28, 2025. Total project expected to be $41,652,022.58 with the majority paid from local funds.",
+        "totalObligations": 2330471,
+        "totalExpenditures": 2330471
+      }
+    ],
+    "totalObligations": 2330471,
+    "totalExpenditures": 2330471,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "24027",
+    "countyName": "Howard",
+    "state": "MD",
+    "projects": [
+      {
+        "projectId": "TPN-250670",
+        "recipientId": "RCP-035885",
+        "recipientName": "Howard County, Maryland",
+        "projectName": "Emergency Shelter Facility at Lynn Buff Court",
+        "state": "MD",
+        "completionStatus": "Not Started",
+        "expenditureCategoryGroup": "2-Negative Economic Impacts",
+        "expenditureCategory": "2.2-Household Assistance: Rent Mortgage and Utility Aid",
+        "description": "Howard County plans to use State and Local Fiscal Recovery Funds (SLFRF) funding for the construction of a night-by-night non-congregate emergency shelter. The shelter will be built at 9530 Lynn Buff Court in Laurel, MD, and will have 20 rooms, each with a private bathroom, and will provide a safe sleeping space for unsheltered individuals. Currently, there is only one emergency shelter in the County and the construction of the new Emergency Shelter will expand the capacity to serve the growing unhoused population. \\nThe Bureau of Facilities of the County\\u2019s Department of Public Works is spearheading this project and will oversee the construction of the emergency shelter building.\\n\\nIntended Outcomes\\n\\u2022\\tTo increase the number of beds available to the unhoused population.\\n\\u2022\\tTo have multiple night-by-night Emergency Shelters in Howard County.",
+        "totalObligations": 2321077,
+        "totalExpenditures": 0
+      }
+    ],
+    "totalObligations": 2321077,
+    "totalExpenditures": 0,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "30031",
+    "countyName": "Gallatin",
+    "state": "MT",
+    "projects": [
+      {
+        "projectId": "TPN-175832",
+        "recipientId": "RCP-039045",
+        "recipientName": "Gallatin County, Montana",
+        "projectName": "Human Resource Development Council (HRDC) -Homeward Point",
+        "state": "MT",
+        "completionStatus": "Completed 50% or more",
+        "expenditureCategoryGroup": "2-Negative Economic Impacts",
+        "expenditureCategory": "2.16-Long-Term Housing Security: Services for Unhoused persons",
+        "description": "The project concerns construction of a 29,725 square foot building that will serve as the new emergency shelter and programming offices for services provided by HRDC.",
+        "totalObligations": 2250000,
+        "totalExpenditures": 2250000
+      }
+    ],
+    "totalObligations": 2250000,
+    "totalExpenditures": 2250000,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "05111",
+    "countyName": "Poinsett",
+    "state": "AR",
+    "projects": [
+      {
+        "projectId": "TPN-217769",
+        "recipientId": "RCP-038054",
+        "recipientName": "Poinsett County, AR",
+        "projectName": "Courthouse Annex Building",
+        "state": "AR",
+        "completionStatus": "Completed less than 50%",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "Construction of a new Courthouse Annex Building to reduce faculty overcrowding of the current Courthouse. This building will allow  the County Assessor's Office and the County Collector's Office to move to a location that is ground level and reduce the climbing of dangerous stairs to assess property and collect taxes. A larger meeting room is included in the construction plans to allow for better social distancing and reduce the current overcrowding of our public meetings and Quorum Court meetings.",
+        "totalObligations": 2070038,
+        "totalExpenditures": 892769
+      }
+    ],
+    "totalObligations": 2070038,
+    "totalExpenditures": 892769,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "37021",
+    "countyName": "Buncombe",
+    "state": "NC",
+    "projects": [
+      {
+        "projectId": "TPN-109638",
+        "recipientId": "RCP-035823",
+        "recipientName": "Buncombe County, North Carolina",
+        "projectName": "Emergency Shelter for Domestic Violence Survivors",
+        "state": "NC",
+        "completionStatus": "Completed 50% or more",
+        "expenditureCategoryGroup": "2-Negative Economic Impacts",
+        "expenditureCategory": "2.16-Long-Term Housing Security: Services for Unhoused persons",
+        "description": "Helpmate will provide housing support services for unhoused persons through its Emergency Shelter for Domestic Violence Survivors Project. This project includes the construction of the new shelter, which will double the availability of emergency shelter for domestic violence survivors in Buncombe County. Project funds will support costs associated with site infrastructure, architectural design, structural engineering, construction, finishing, furnishing and related costs to build a 25-30,000 sq. ft. domestic violence shelter on land owned by the organization. With 42 shelter beds plus a multi-purpose space for overflow, Helpmate will have capacity to serve 475 adults and children per year in the new facility.",
+        "totalObligations": 2000000,
+        "totalExpenditures": 2000000
+      }
+    ],
+    "totalObligations": 2000000,
+    "totalExpenditures": 2000000,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "12083",
+    "countyName": "Marion",
+    "state": "FL",
+    "projects": [
+      {
+        "projectId": "TPN-252011",
+        "recipientId": "RCP-035951",
+        "recipientName": "Marion County, Florida",
+        "projectName": "College of Central Florida Nursing Facility",
+        "state": "FL",
+        "completionStatus": "Not Started",
+        "expenditureCategoryGroup": "1-Public Health",
+        "expenditureCategory": "1.14-Other Public Health Services",
+        "description": "Construct a new building located at 3001 S.W. College Road , Ocala FL 34474-4415 to provide additional instructional space for its nursing program;",
+        "totalObligations": 1954974,
+        "totalExpenditures": 1582610
+      }
+    ],
+    "totalObligations": 1954974,
+    "totalExpenditures": 1582610,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "41003",
+    "countyName": "Benton",
+    "state": "OR",
+    "projects": [
+      {
+        "projectId": "TPN-189079",
+        "recipientId": "RCP-039807",
+        "recipientName": "Benton County, Oregon",
+        "projectName": "Benton County Courthouse and District Attorney Office Project",
+        "state": "OR",
+        "completionStatus": "Completed less than 50%",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "Construction of new Courthouse and District Attorney's Office to provide adequate space for delivering  publice safety and justice services for Benton County.",
+        "totalObligations": 1852210,
+        "totalExpenditures": 0
+      }
+    ],
+    "totalObligations": 1852210,
+    "totalExpenditures": 0,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "12069",
+    "countyName": "Lake",
+    "state": "FL",
+    "projects": [
+      {
+        "projectId": "TPN-235340",
+        "recipientId": "RCP-035943",
+        "recipientName": "Lake County, Florida",
+        "projectName": "Montverde Fire Station 85",
+        "state": "FL",
+        "completionStatus": "Completed less than 50%",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "Lake County entered an interlocal agreement in May 2021 with the Town of Montverde to begin providing Fire Protection and Rescue Services for the municipality, which replaced the long-standing volunteer department. As part of the agreement, the county agreed to construct a new facility, Fire Station 85, within the community. These funds will help to cover a portion of the construction costs of this brand-new fire station.",
+        "totalObligations": 1757542,
+        "totalExpenditures": 182877
+      }
+    ],
+    "totalObligations": 1757542,
+    "totalExpenditures": 182877,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "39017",
+    "countyName": "Butler",
+    "state": "OH",
+    "projects": [
+      {
+        "projectId": "TPN-166853",
+        "recipientId": "RCP-036538",
+        "recipientName": "Butler County, Ohio",
+        "projectName": "City of Oxford Food Pantry and Family Resource Center",
+        "state": "OH",
+        "completionStatus": "Completed 50% or more",
+        "expenditureCategoryGroup": "2-Negative Economic Impacts",
+        "expenditureCategory": "2.34-Assistance to Impacted Nonprofit Organizations (Impacted or Disproportionately Impacted)",
+        "description": "To construct a new facility for the Talawanda Oxford pantry and social services resource center",
+        "totalObligations": 1500000,
+        "totalExpenditures": 1500000
+      }
+    ],
+    "totalObligations": 1500000,
+    "totalExpenditures": 1500000,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "30013",
+    "countyName": "Cascade",
+    "state": "MT",
+    "projects": [
+      {
+        "projectId": "TPN-167060",
+        "recipientId": "RCP-039126",
+        "recipientName": "Cascade County, Montana",
+        "projectName": "Building of an evidence processing building",
+        "state": "MT",
+        "completionStatus": "Completed 50% or more",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "Design and construction of a new evidence processing and storage building at the Sheriff's Office.",
+        "totalObligations": 1500000,
+        "totalExpenditures": 1098682
+      }
+    ],
+    "totalObligations": 1500000,
+    "totalExpenditures": 1098682,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "17189",
+    "countyName": "Washington",
+    "state": "IL",
+    "projects": [
+      {
+        "projectId": "TPN-276407",
+        "recipientId": "RCP-039460",
+        "recipientName": "Washington County, IL",
+        "projectName": "New Ambulance Department",
+        "state": "IL",
+        "completionStatus": "Completed",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "Construction of New Ambulance Department",
+        "totalObligations": 1448689,
+        "totalExpenditures": 1448689
+      }
+    ],
+    "totalObligations": 1448689,
+    "totalExpenditures": 1448689,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "48493",
+    "countyName": "Wilson",
+    "state": "TX",
+    "projects": [
+      {
+        "projectId": "TPN-065331",
+        "recipientId": "RCP-039179",
+        "recipientName": "Wilson County, TX",
+        "projectName": "Wilson County Emergency Management Operations Center",
+        "state": "TX",
+        "completionStatus": "Completed less than 50%",
+        "expenditureCategoryGroup": "1-Public Health",
+        "expenditureCategory": "1.14-Other Public Health Services",
+        "description": "Wilson County will hire a consultant to construct a new emergency operations center to facilitate an integrated response to all emergencies--local and national. This facility will include appropriate and current technology, office space, emergency planning / mobilization and staging space, and all items necessary to provide this county and surrounding areas with the utmost responsive and integrated approach to managing an emergency.",
+        "totalObligations": 1302877,
+        "totalExpenditures": 222515
+      }
+    ],
+    "totalObligations": 1302877,
+    "totalExpenditures": 222515,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "55061",
+    "countyName": "Kewaunee",
+    "state": "WI",
+    "projects": [
+      {
+        "projectId": "TPN-121231",
+        "recipientId": "RCP-038511",
+        "recipientName": "Kewaunee County, WI",
+        "projectName": "County Jail Project",
+        "state": "WI",
+        "completionStatus": "Completed",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "New Jail project",
+        "totalObligations": 1239864,
+        "totalExpenditures": 1239864
+      }
+    ],
+    "totalObligations": 1239864,
+    "totalExpenditures": 1239864,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "21163",
+    "countyName": "Meade",
+    "state": "KY",
+    "projects": [
+      {
+        "projectId": "TPN-138347",
+        "recipientId": "RCP-039775",
+        "recipientName": "Meade County, KY",
+        "projectName": "EMS Station #3",
+        "state": "KY",
+        "completionStatus": "Completed",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "This project designed and built a new EMS Station for the citizens of Meade County and purchased and installed necessary appliances and septic tank and pump.  The project also included the purchase and installation of a bronze plaque commemorating the project. The station will provide ambulance coverage 24/7 along with full-time EMT and Paramedics.",
+        "totalObligations": 740388,
+        "totalExpenditures": 740388
+      },
+      {
+        "projectId": "TPN-271630",
+        "recipientId": "RCP-039775",
+        "recipientName": "Meade County, KY",
+        "projectName": "Animal Shelter",
+        "state": "KY",
+        "completionStatus": "Completed 50% or more",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "This project is for construction of a new animal shelter including dirt work and design.   This project will be located in the county and easily accessible to the public.  This project will be larger and hold more animals in a climiate control setting.  This project will have rooms for community participation.  The animal shelter is run by Meade County Fiscal Court.",
+        "totalObligations": 392225,
+        "totalExpenditures": 337995
+      }
+    ],
+    "totalObligations": 1132613,
+    "totalExpenditures": 1078383,
+    "projectCount": 2
+  },
+  {
+    "countyFips": "48207",
+    "countyName": "Haskell",
+    "state": "TX",
+    "projects": [
+      {
+        "projectId": "TPN-139846",
+        "recipientId": "RCP-040004",
+        "recipientName": "Haskell County, TX",
+        "projectName": "Haskell County Emergency Operations Center",
+        "state": "TX",
+        "completionStatus": "Completed less than 50%",
+        "expenditureCategoryGroup": "2-Negative Economic Impacts",
+        "expenditureCategory": "2.22-Strong Healthy Communities: Neighborhood Features that Promote Health and Safety",
+        "description": "Construct new emergency operations center for Haskell County, Texas.",
+        "totalObligations": 1099000,
+        "totalExpenditures": 1099000
+      }
+    ],
+    "totalObligations": 1099000,
+    "totalExpenditures": 1099000,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "29071",
+    "countyName": "Franklin",
+    "state": "MO",
+    "projects": [
+      {
+        "projectId": "TPN-190933",
+        "recipientId": "RCP-038588",
+        "recipientName": "Franklin County, Missouri",
+        "projectName": "New Haven Ambulance District",
+        "state": "MO",
+        "completionStatus": "Completed",
+        "expenditureCategoryGroup": "3-Public Health-Negative Economic Impact: Public Sector Capacity",
+        "expenditureCategory": "3.4-Public Sector Capacity: Effective Service Delivery",
+        "description": "Construction of a new ambulance building to allow the New Haven Ambulance District to continue providing the highest level of emergency medical services by housing larger and more modern emergency response vehicles and providing an Emergency Operations Center.",
+        "totalObligations": 1050000,
+        "totalExpenditures": 240232
+      }
+    ],
+    "totalObligations": 1050000,
+    "totalExpenditures": 240232,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "45081",
+    "countyName": "Saluda",
+    "state": "SC",
+    "projects": [
+      {
+        "projectId": "TPN-280576",
+        "recipientId": "RCP-039523",
+        "recipientName": "Saluda County, SC",
+        "projectName": "EMS",
+        "state": "SC",
+        "completionStatus": "Not reported",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "Construct new EMS Station in a low income rural area.",
+        "totalObligations": 1028021,
+        "totalExpenditures": 1028021
+      }
+    ],
+    "totalObligations": 1028021,
+    "totalExpenditures": 1028021,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "13179",
+    "countyName": "Liberty",
+    "state": "GA",
+    "projects": [
+      {
+        "projectId": "TPN-030060",
+        "recipientId": "RCP-040167",
+        "recipientName": "Liberty County, Georgia",
+        "projectName": "Construction of an EMS Station",
+        "state": "GA",
+        "completionStatus": "Completed",
+        "expenditureCategoryGroup": "1-Public Health",
+        "expenditureCategory": "1.7-Other COVID-19 Public Health Expenses (including Communications Enforcement Isolation/Quarantine)",
+        "description": "Liberty County will contribute to the construction of a new EMS building.  This building has been designed and the bids were reviewed on 1/27/2022.  The Commissioners will award the bid at their meeting on 2/1/2022.  Total Project estimated at $2.5M",
+        "totalObligations": 1000000,
+        "totalExpenditures": 1000000
+      }
+    ],
+    "totalObligations": 1000000,
+    "totalExpenditures": 1000000,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "53021",
+    "countyName": "Franklin",
+    "state": "WA",
+    "projects": [
+      {
+        "projectId": "TPN-197239",
+        "recipientId": "RCP-038409",
+        "recipientName": "Franklin County, Washington",
+        "projectName": "Fire District No. 2 Fire Station",
+        "state": "WA",
+        "completionStatus": "Completed less than 50%",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "Fire District No. 2 provision of government services will use the funds for Phase 1 of a new fire station, which may be used for the prevention, treatment, and/or mitigation of COVID-19. This includes a 60ft x 45ft structure with 3 bays to house 6 emergency vehicles, fire trucks and/or ambulance, as well as provide emergency care and services.",
+        "totalObligations": 963615,
+        "totalExpenditures": 963615
+      }
+    ],
+    "totalObligations": 963615,
+    "totalExpenditures": 963615,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "13003",
+    "countyName": "Atkinson",
+    "state": "GA",
+    "projects": [
+      {
+        "projectId": "TPN-240478",
+        "recipientId": "RCP-037973",
+        "recipientName": "Atkinson County, GA",
+        "projectName": "New Jail/Courthouse",
+        "state": "GA",
+        "completionStatus": "Completed",
+        "expenditureCategoryGroup": "1-Public Health",
+        "expenditureCategory": "1.4-Prevention in Congregate Settings (Nursing Homes Prisons/Jails Dense Work Sites Schools Child care facilities etc.)",
+        "description": "Building of a new jail with germ prevention in mind",
+        "totalObligations": 883714,
+        "totalExpenditures": 883714
+      }
+    ],
+    "totalObligations": 883714,
+    "totalExpenditures": 883714,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "12019",
+    "countyName": "Clay",
+    "state": "FL",
+    "projects": [
+      {
+        "projectId": "TPN-259199",
+        "recipientId": "RCP-035929",
+        "recipientName": "Clay County, Florida",
+        "projectName": "Fire Station 20 Construction",
+        "state": "FL",
+        "completionStatus": "Completed",
+        "expenditureCategoryGroup": "1-Public Health",
+        "expenditureCategory": "1.14-Other Public Health Services",
+        "description": "Construction of the new Fire Station 20, which is located at the intersection of Idlewood Avenue and Southwest Street in Green Cove Springs. This funding request is associated with the Phase 2 Construction Agreement with Ajax Building Company, LLC.",
+        "totalObligations": 836356,
+        "totalExpenditures": 836356
+      }
+    ],
+    "totalObligations": 836356,
+    "totalExpenditures": 836356,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "18125",
+    "countyName": "Pike",
+    "state": "IN",
+    "projects": [
+      {
+        "projectId": "TPN-057298",
+        "recipientId": "RCP-038618",
+        "recipientName": "Pike County, IN",
+        "projectName": "CONSTRUCTION OF A PIKE COUNTY AMBULANCE STATION & STORAGE FACILITY",
+        "state": "IN",
+        "completionStatus": "Completed 50% or more",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "PIKE COUNTY IS BUILDING A NEW AMBULANCE STATION .  COUNTY  CURRENTLY RENTS SPACE FOR OUR SOUTHERN EMS STATION. THE INCORPORATION OF THIS SPACE INTO THIS BUILDING WILL PROVIDE A DEDICATED SPACE FOR EMS IN THE COUNTY'S SOTHERN REGION.  COUNTY IS UTILIZING THE BUDGET FOR THIS ITEM PLUS INTEREST FROM INVESTING A PORTION OF THE SLFRF FUNDS, PLUS LATCF FUNDS, PLUS COUNTY ECONOMIC DEVELOPMENT FUNDS TO BUILD A 1,000,000 EMS BUILDING.",
+        "totalObligations": 805000,
+        "totalExpenditures": 410540
+      }
+    ],
+    "totalObligations": 805000,
+    "totalExpenditures": 410540,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "16037",
+    "countyName": "Custer",
+    "state": "ID",
+    "projects": [
+      {
+        "projectId": "TPN-273803",
+        "recipientId": "RCP-040107",
+        "recipientName": "Custer County, ID",
+        "projectName": "Custer County Jail",
+        "state": "ID",
+        "completionStatus": "Not reported",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "Remaining funds of $771,914.96 were dedicated to help with the building of a new Jail for Custer County.  RFQ's were sent out on January 13, 2025, and 3 were received.  The commissioners have had several meetings for design and jail specifications.  The commissioners have not received any blueprints at this time. Custer County is in need of an upgraded jail.  The jail we now have is 125 years old and is out of compliance. We are hoping to get started this summer with a finish date of sometime in 2026.",
+        "totalObligations": 771915,
+        "totalExpenditures": 0
+      }
+    ],
+    "totalObligations": 771915,
+    "totalExpenditures": 0,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "35061",
+    "countyName": "Valencia",
+    "state": "NM",
+    "projects": [
+      {
+        "projectId": "TPN-195034",
+        "recipientId": "RCP-039031",
+        "recipientName": "Valencia County, New Mexico",
+        "projectName": "Valencia County Sheriff's Office - Evidence/Training Room",
+        "state": "NM",
+        "completionStatus": "Completed 50% or more",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "Valencia County will use ARPA funding to assist with the planning, design and construction of a new evidence room/training facility to establish quarterly training to deputies on COVID-19 updates and safety protocols.",
+        "totalObligations": 705754,
+        "totalExpenditures": 705754
+      }
+    ],
+    "totalObligations": 705754,
+    "totalExpenditures": 705754,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "29047",
+    "countyName": "Clay",
+    "state": "MO",
+    "projects": [
+      {
+        "projectId": "TPN-250312",
+        "recipientId": "RCP-035935",
+        "recipientName": "Clay County, Missouri",
+        "projectName": "Transition Facility",
+        "state": "MO",
+        "completionStatus": "Completed less than 50%",
+        "expenditureCategoryGroup": "1-Public Health",
+        "expenditureCategory": "1.12-Mental Health Services",
+        "description": "The County Juvenile Department provides supervised visitation services for separated families as part of family court and other court rulings.  These services assist with the behavioral health of all parties involved and potentially reduce violence or further problems to society. Previously the County used an historic house for the program. It is in disrepair and unsafe to use any further.  This project is to therefore construct a new facility on County property. It includes child-friendly facilities to facilitate the visits.",
+        "totalObligations": 625000,
+        "totalExpenditures": 441105
+      }
+    ],
+    "totalObligations": 625000,
+    "totalExpenditures": 441105,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "17079",
+    "countyName": "Jasper",
+    "state": "IL",
+    "projects": [
+      {
+        "projectId": "TPN-225819",
+        "recipientId": "RCP-039876",
+        "recipientName": "Jasper County, IL",
+        "projectName": "Jail-Construction Final Payment",
+        "state": "IL",
+        "completionStatus": "Completed",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "This expense covers a portion of the construction costs for the new jail that the county had built.",
+        "totalObligations": 212898,
+        "totalExpenditures": 212898
+      },
+      {
+        "projectId": "TPN-122644",
+        "recipientId": "RCP-039876",
+        "recipientName": "Jasper County, IL",
+        "projectName": "Jail Construction Project Payment #11",
+        "state": "IL",
+        "completionStatus": "Completed",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "The Jasper County Jail was deteriorated to the point of being unusable.  The sheriff's office was sending copious amounts of money each month to other detention centers for housing individuals because their facility could not safely keep them.  The board decided to use part of their ARPA funds, in conjunction with money they had in reserves, to pay for the building of a new jail.  The construction and billing are coming in phases.  This project is nearing completion, but still has a bit to go.  Without ARPA funding, the county could not have afforded to pay for a new building from what they had saved.",
+        "totalObligations": 197722,
+        "totalExpenditures": 197722
+      },
+      {
+        "projectId": "TPN-122762",
+        "recipientId": "RCP-039876",
+        "recipientName": "Jasper County, IL",
+        "projectName": "Jail Construction Project Payment #15",
+        "state": "IL",
+        "completionStatus": "Completed",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "The Jasper County Jail was deteriorated to the point of being unusable.  The sheriff's office was sending copious amounts of money each month to other detention centers for housing individuals because their facility could not safely keep them.  The board decided to use part of their ARPA funds, in conjunction with money they had in reserves, to pay for the building of a new jail.  The construction and billing are coming in phases.  This project is nearing completion, but still has a bit to go.  Without ARPA funding, the county could not have afforded to pay for a new building from what they had saved.",
+        "totalObligations": 119318,
+        "totalExpenditures": 119318
+      },
+      {
+        "projectId": "TPN-122861",
+        "recipientId": "RCP-039876",
+        "recipientName": "Jasper County, IL",
+        "projectName": "Jail Construction Project Payment",
+        "state": "IL",
+        "completionStatus": "Completed",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "The Jasper County Jail was deteriorated to the point of being unusable.  The sheriff's office was sending copious amounts of money each month to other detention centers for housing individuals because their facility could not safely keep them.  The board decided to use part of their ARPA funds, in conjunction with money they had in reserves, to pay for the building of a new jail.  The construction and billing are coming in phases.  This project is nearing completion, but still has a bit to go.  Without ARPA funding, the county could not have afforded to pay for a new building from what they had saved.",
+        "totalObligations": 19685,
+        "totalExpenditures": 19685
+      }
+    ],
+    "totalObligations": 549623,
+    "totalExpenditures": 549623,
+    "projectCount": 4
+  },
+  {
+    "countyFips": "18081",
+    "countyName": "Johnson",
+    "state": "IN",
+    "projects": [
+      {
+        "projectId": "TPN-117914",
+        "recipientId": "RCP-040310",
+        "recipientName": "Johnson County, Indiana",
+        "projectName": "Mental Health Facility Design",
+        "state": "IN",
+        "completionStatus": "Completed 50% or more",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "Design costs for new mental health facility in Johnson County.",
+        "totalObligations": 544364,
+        "totalExpenditures": 544364
+      }
+    ],
+    "totalObligations": 544364,
+    "totalExpenditures": 544364,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "01103",
+    "countyName": "Morgan",
+    "state": "AL",
+    "projects": [
+      {
+        "projectId": "TPN-238396",
+        "recipientId": "RCP-036755",
+        "recipientName": "Morgan County, Alabama",
+        "projectName": "Morgan County-Decatur Farmer's Market",
+        "state": "AL",
+        "completionStatus": "Completed",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "Transfer of funds to the Decatur-Morgan County Farmer's Market Board, a quasi-governmental entity established by public ordinance, to construct a new facility for the operation of a farmer's market to support local industry.",
+        "totalObligations": 500000,
+        "totalExpenditures": 500000
+      }
+    ],
+    "totalObligations": 500000,
+    "totalExpenditures": 500000,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "13145",
+    "countyName": "Harris",
+    "state": "GA",
+    "projects": [
+      {
+        "projectId": "TPN-220989",
+        "recipientId": "RCP-039821",
+        "recipientName": "Harris County, GA",
+        "projectName": "EMS/VFD Facility",
+        "state": "GA",
+        "completionStatus": "Completed",
+        "expenditureCategoryGroup": "1-Public Health",
+        "expenditureCategory": "1.6-Medical Expenses (including Alternative Care Facilities)",
+        "description": "Construction of new EMS/VFD in the Northwest Harris Business Park",
+        "totalObligations": 472000,
+        "totalExpenditures": 472000
+      }
+    ],
+    "totalObligations": 472000,
+    "totalExpenditures": 472000,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "53077",
+    "countyName": "Yakima",
+    "state": "WA",
+    "projects": [
+      {
+        "projectId": "TPN-248172",
+        "recipientId": "RCP-036002",
+        "recipientName": "Yakima County, Washington",
+        "projectName": "Highland Food Bank Building",
+        "state": "WA",
+        "completionStatus": "Completed 50% or more",
+        "expenditureCategoryGroup": "2-Negative Economic Impacts",
+        "expenditureCategory": "2.1-Household Assistance: Food Programs",
+        "description": "Build a new facility for the Highland Food Bank in Tieton, WA.  The building is a galvanized metal and pole structure that will be 30\\u2019 X 72\\u2019, which is 2160 square feet.",
+        "totalObligations": 400000,
+        "totalExpenditures": 322874
+      }
+    ],
+    "totalObligations": 400000,
+    "totalExpenditures": 322874,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "01023",
+    "countyName": "Choctaw",
+    "state": "AL",
+    "projects": [
+      {
+        "projectId": "TPN-216364",
+        "recipientId": "RCP-040299",
+        "recipientName": "Choctaw County, AL",
+        "projectName": "Design Services for County Jail",
+        "state": "AL",
+        "completionStatus": "Completed 50% or more",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "In order to provide for a constitutionally required jail facility, the County is building a new jail facility.  This project is to provide for design services for the new jail.",
+        "totalObligations": 368900,
+        "totalExpenditures": 333471
+      }
+    ],
+    "totalObligations": 368900,
+    "totalExpenditures": 333471,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "21021",
+    "countyName": "Boyle",
+    "state": "KY",
+    "projects": [
+      {
+        "projectId": "TPN-283525",
+        "recipientId": "RCP-053102",
+        "recipientName": "Boyle County,",
+        "projectName": "Boyle County Fire Department",
+        "state": "KY",
+        "completionStatus": "Not reported",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "The County used its ARPA funds to develop a new fire station in an un-served area known as \"Station No. 9.\"  The project provided new service to residents that previously did not have fire service.  It also served a state prison that previously did not have fire service.",
+        "totalObligations": 350000,
+        "totalExpenditures": 350000
+      }
+    ],
+    "totalObligations": 350000,
+    "totalExpenditures": 350000,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "28071",
+    "countyName": "Lafayette",
+    "state": "MS",
+    "projects": [
+      {
+        "projectId": "TPN-238273",
+        "recipientId": "RCP-037742",
+        "recipientName": "Lafayette County, Mississippi",
+        "projectName": "Animal Shelter",
+        "state": "MS",
+        "completionStatus": "Completed",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "Construction of new animal shelter",
+        "totalObligations": 350000,
+        "totalExpenditures": 350000
+      }
+    ],
+    "totalObligations": 350000,
+    "totalExpenditures": 350000,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "47019",
+    "countyName": "Carter",
+    "state": "TN",
+    "projects": [
+      {
+        "projectId": "TPN-082661",
+        "recipientId": "RCP-038243",
+        "recipientName": "Carter County, Tennessee",
+        "projectName": "Hampton Volunteer Fire Department Building Project",
+        "state": "TN",
+        "completionStatus": "Completed",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "To provide part of the funding needed for the Hampton Volunteer Fire Department to build a new facility, replacing the existing structure that is no longer suitable for that operation.",
+        "totalObligations": 150000,
+        "totalExpenditures": 150000
+      },
+      {
+        "projectId": "TPN-082700",
+        "recipientId": "RCP-038243",
+        "recipientName": "Carter County, Tennessee",
+        "projectName": "Stoney Creek Volunteer Fire Department",
+        "state": "TN",
+        "completionStatus": "Completed",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "To provide part of the funding needed for the Stoney Creek Volunteer Fire Department to build a new facility, replacing the existing structure that is no longer suitable for that operation.",
+        "totalObligations": 150000,
+        "totalExpenditures": 150000
+      }
+    ],
+    "totalObligations": 300000,
+    "totalExpenditures": 300000,
+    "projectCount": 2
+  },
+  {
+    "countyFips": "21235",
+    "countyName": "Whitley",
+    "state": "KY",
+    "projects": [
+      {
+        "projectId": "TPN-218803",
+        "recipientId": "RCP-039491",
+        "recipientName": "Whitley County, KY",
+        "projectName": "Revenue Replacement - Fairgrounds Shelter",
+        "state": "KY",
+        "completionStatus": "Completed",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "The construction of a new shelter structure to be built at the Whitley County Fairgrounds to provide enhanced recreational facilities for County residents and administrative and legal expenses.",
+        "totalObligations": 269927,
+        "totalExpenditures": 269927
+      }
+    ],
+    "totalObligations": 269927,
+    "totalExpenditures": 269927,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "36007",
+    "countyName": "Broome",
+    "state": "NY",
+    "projects": [
+      {
+        "projectId": "TPN-243919",
+        "recipientId": "RCP-040267",
+        "recipientName": "County Of Broome New York, New York",
+        "projectName": "Support for Construction of New Building",
+        "state": "NY",
+        "completionStatus": "Completed",
+        "expenditureCategoryGroup": "1-Public Health",
+        "expenditureCategory": "1.12-Mental Health Services",
+        "description": "Support for Construction of New Building for \"Family and Children's Counseling Service\".",
+        "totalObligations": 200000,
+        "totalExpenditures": 200000
+      }
+    ],
+    "totalObligations": 200000,
+    "totalExpenditures": 200000,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "41005",
+    "countyName": "Clackamas",
+    "state": "OR",
+    "projects": [
+      {
+        "projectId": "TPN-172171",
+        "recipientId": "RCP-036122",
+        "recipientName": "Clackamas County, Oregon",
+        "projectName": "Molalla Adult Community Center Project",
+        "state": "OR",
+        "completionStatus": "Completed less than 50%",
+        "expenditureCategoryGroup": "2-Negative Economic Impacts",
+        "expenditureCategory": "2.37-Economic Impact Assistance: Other",
+        "description": "Molalla Adult Community Center (MACC) is a Non-Profit organization providing programs and services that help equip clients to stay independent as long as possible. MACC provides resources, assistance, social activities, and meals with a focus of aiding Seniors and those with physical disabilities in Molalla and the surrounding area including Mulino, Colton, Beavercreek, and rural Canby.  Our Advisory Board has purchased land in the Molalla City limits to build a new building to house the MACC. The project funding is for pre-construction site prep work on the construction of the new Molalla Adult Community Center.",
+        "totalObligations": 200000,
+        "totalExpenditures": 122853
+      }
+    ],
+    "totalObligations": 200000,
+    "totalExpenditures": 122853,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "48141",
+    "countyName": "El Paso",
+    "state": "TX",
+    "projects": [
+      {
+        "projectId": "TPN-109430",
+        "recipientId": "RCP-035852",
+        "recipientName": "El Paso County, Texas",
+        "projectName": "OFFICE OF MEDICAL EXAMINER- MNK",
+        "state": "TX",
+        "completionStatus": "Completed less than 50%",
+        "expenditureCategoryGroup": "3-Public Health-Negative Economic Impact: Public Sector Capacity",
+        "expenditureCategory": "3.4-Public Sector Capacity: Effective Service Delivery",
+        "description": "The Office of the Medical Examiner (OME) is seeking to construct a new facility as existing operational demands can no longer be housed in the existing facility.",
+        "totalObligations": 177217,
+        "totalExpenditures": 15000
+      }
+    ],
+    "totalObligations": 177217,
+    "totalExpenditures": 15000,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "54055",
+    "countyName": "Mercer",
+    "state": "WV",
+    "projects": [
+      {
+        "projectId": "TPN-114581",
+        "recipientId": "RCP-036762",
+        "recipientName": "Mercer County, West Virginia",
+        "projectName": "Athens Volunteer Fire Department-Purchase Property for New Fire Department",
+        "state": "WV",
+        "completionStatus": "Completed",
+        "expenditureCategoryGroup": "2-Negative Economic Impacts",
+        "expenditureCategory": "2.22-Strong Healthy Communities: Neighborhood Features that Promote Health and Safety",
+        "description": "The Athens Volunteer Fire Department requested ARP funding to purchase property for the construction of a new fire station, community center, and emergency shelter in the Town of Athens.   This facility would allow the citizens of Athens and surrounding communities including Lerona, Speedway, Pettry, Elgood, Pipestem, Gardner, and Island Creek to have an emergency shelter closer to home without having to travel to the nearest shelter, which is in Princeton, West Virginia.  The Athens VFD has been operating out of the same building since 1967.  The current available space does not meet current or future needs.",
+        "totalObligations": 150000,
+        "totalExpenditures": 150000
+      }
+    ],
+    "totalObligations": 150000,
+    "totalExpenditures": 150000,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "21107",
+    "countyName": "Hopkins",
+    "state": "KY",
+    "projects": [
+      {
+        "projectId": "TPN-141700",
+        "recipientId": "RCP-038760",
+        "recipientName": "Hopkins County, KY",
+        "projectName": "Nebo Fire Department Building",
+        "state": "KY",
+        "completionStatus": "Completed",
+        "expenditureCategoryGroup": "1-Public Health",
+        "expenditureCategory": "1.14-Other Public Health Services",
+        "description": "We provided the Nebo Fire Department with the funds necessary to construct a new building, which will replace its aging one.",
+        "totalObligations": 100000,
+        "totalExpenditures": 100000
+      }
+    ],
+    "totalObligations": 100000,
+    "totalExpenditures": 100000,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "01037",
+    "countyName": "Coosa",
+    "state": "AL",
+    "projects": [
+      {
+        "projectId": "TPN-283548",
+        "recipientId": "RCP-053271",
+        "recipientName": "Coosa County, Al,",
+        "projectName": "Goodwater Volunteer Fire Department Facility",
+        "state": "AL",
+        "completionStatus": "Completed less than 50%",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "This project is to support a funding agreement with the Goodwater Volunteer Fire Department for the construction of new facility to provide more immediate services to its citizens and to provide an additional polling location in the Goodwater area to facilitate fair and equitable elections.",
+        "totalObligations": 100000,
+        "totalExpenditures": 0
+      }
+    ],
+    "totalObligations": 100000,
+    "totalExpenditures": 0,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "51135",
+    "countyName": "Nottoway",
+    "state": "VA",
+    "projects": [
+      {
+        "projectId": "TPN-287552",
+        "recipientId": "RCP-037362",
+        "recipientName": "Nottoway County, VA",
+        "projectName": "Animal Shelter Architect",
+        "state": "VA",
+        "completionStatus": "Completed 50% or more",
+        "expenditureCategoryGroup": "10-Title I",
+        "expenditureCategory": "10.16-Assistance to private, for profit entities to carry out economic development projects",
+        "description": "Used funds to pay for the new Animal Shelter Architect contract. The Architect is in charge of producing the design and schematics for the new County Animal Shelter.",
+        "totalObligations": 75000,
+        "totalExpenditures": 75000
+      }
+    ],
+    "totalObligations": 75000,
+    "totalExpenditures": 75000,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "13307",
+    "countyName": "Webster",
+    "state": "GA",
+    "projects": [
+      {
+        "projectId": "TPN-290768",
+        "recipientId": "RCP-025986",
+        "recipientName": "Webster County Unified Government, GA",
+        "projectName": "Fire Department",
+        "state": "GA",
+        "completionStatus": "Completed",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "New Fire Station",
+        "totalObligations": 61380,
+        "totalExpenditures": 61380
+      }
+    ],
+    "totalObligations": 61380,
+    "totalExpenditures": 61380,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "40131",
+    "countyName": "Rogers",
+    "state": "OK",
+    "projects": [
+      {
+        "projectId": "TPN-131541",
+        "recipientId": "RCP-038486",
+        "recipientName": "Rogers County, Oklahoma",
+        "projectName": "Rev Loss - Chelsea Fire",
+        "state": "OK",
+        "completionStatus": "Completed",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "Purchase 4 new SCBA packs and construct new fire station",
+        "totalObligations": 60000,
+        "totalExpenditures": 60000
+      }
+    ],
+    "totalObligations": 60000,
+    "totalExpenditures": 60000,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "47163",
+    "countyName": "Sullivan",
+    "state": "TN",
+    "projects": [
+      {
+        "projectId": "TPN-120936",
+        "recipientId": "RCP-038427",
+        "recipientName": "Sullivan County, Tennessee",
+        "projectName": "Indian Springs VFD",
+        "state": "TN",
+        "completionStatus": "Completed",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "The Indian Springs Volunteer Fire Department is a new fire station. The station was necessary in order to keep up with the increase in calls due to COVID related instances. The new equipment is necessary to outfit the station with the items needed to run the station properly. The Indian Springs VFD provides emergency services along with the rescue squads in Sullivan County.",
+        "totalObligations": 45518,
+        "totalExpenditures": 45518
+      }
+    ],
+    "totalObligations": 45518,
+    "totalExpenditures": 45518,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "13227",
+    "countyName": "Pickens",
+    "state": "GA",
+    "projects": [
+      {
+        "projectId": "TPN-142945",
+        "recipientId": "RCP-037123",
+        "recipientName": "Pickens County, GA",
+        "projectName": "Talking Rock Fire Station",
+        "state": "GA",
+        "completionStatus": "Completed",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "To build a new fire station in the Talking Rock area",
+        "totalObligations": 42098,
+        "totalExpenditures": 42098
+      }
+    ],
+    "totalObligations": 42098,
+    "totalExpenditures": 42098,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "01005",
+    "countyName": "Barbour",
+    "state": "AL",
+    "projects": [
+      {
+        "projectId": "TPN-219479",
+        "recipientId": "RCP-037689",
+        "recipientName": "Barbour County, AL",
+        "projectName": "New Senior Center",
+        "state": "AL",
+        "completionStatus": "Completed",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "The County has received a Community Development Block Grant for the construction of a new senior center. This project is to provide for a federal match as required by that grant, including in-kind services, in support of the construction project. The County has further verified that there has been no waiver issued and no statute or regulation prohibits the use of these funds as part of the County's match.",
+        "totalObligations": 28298,
+        "totalExpenditures": 28298
+      }
+    ],
+    "totalObligations": 28298,
+    "totalExpenditures": 28298,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "21085",
+    "countyName": "Grayson",
+    "state": "KY",
+    "projects": [
+      {
+        "projectId": "TPN-276368",
+        "recipientId": "RCP-036740",
+        "recipientName": "Grayson County, KY",
+        "projectName": "EMS BUILDING",
+        "state": "KY",
+        "completionStatus": "Completed",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "COUNTY USED $24,375.86 TO BUILD A NEW EMS BUILDING.",
+        "totalObligations": 24376,
+        "totalExpenditures": 24376
+      }
+    ],
+    "totalObligations": 24376,
+    "totalExpenditures": 24376,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "06009",
+    "countyName": "Calaveras",
+    "state": "CA",
+    "projects": [
+      {
+        "projectId": "TPN-059614",
+        "recipientId": "RCP-000949",
+        "recipientName": "County Of Calaveras,",
+        "projectName": "Animal Shelter",
+        "state": "CA",
+        "completionStatus": "Cancelled",
+        "expenditureCategoryGroup": "6-Revenue Replacement",
+        "expenditureCategory": "6.1-Provision of Government Services",
+        "description": "Design and construction of new Animal Shelter building to replace the current building that has exceeded its functional lifespan and no longer provides an optimal working and living space for employees and sheltered animals.",
+        "totalObligations": 0,
+        "totalExpenditures": 0
+      }
+    ],
+    "totalObligations": 0,
+    "totalExpenditures": 0,
+    "projectCount": 1
+  },
+  {
+    "countyFips": "35047",
+    "countyName": "San Miguel",
+    "state": "NM",
+    "projects": [
+      {
+        "projectId": "TPN-142244",
+        "recipientId": "RCP-000962",
+        "recipientName": "San Miguel County,",
+        "projectName": "Tecolotito Fire Station",
+        "state": "NM",
+        "completionStatus": "Cancelled",
+        "expenditureCategoryGroup": "1-Public Health",
+        "expenditureCategory": "1.14-Other Public Health Services",
+        "description": "This project will help fund a new fire station in Tecolotito, which currently doesn't have one.",
+        "totalObligations": 0,
+        "totalExpenditures": 0
+      }
+    ],
+    "totalObligations": 0,
+    "totalExpenditures": 0,
+    "projectCount": 1
+  }
+]
