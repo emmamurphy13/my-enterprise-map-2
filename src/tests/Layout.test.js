@@ -6,13 +6,13 @@ import SiteFooter from '$lib/components/Layout/SiteFooter.svelte';
 describe('SiteHeader', () => {
   it('renders the logo', () => {
     render(SiteHeader);
-    expect(screen.getByLabelText('NYCity News Service')).toBeTruthy();
+    expect(screen.getByLabelText('Issue Number One')).toBeTruthy();
   });
 
   it('renders default navigation links', () => {
     render(SiteHeader);
-    expect(screen.getByText('Arts & Culture')).toBeTruthy();
-    expect(screen.getByText('Politics')).toBeTruthy();
+    expect(screen.getByText('Economy')).toBeTruthy();
+    expect(screen.getByText('Featured')).toBeTruthy();
   });
 
   it('renders custom navigation links', () => {
@@ -33,18 +33,14 @@ describe('SiteHeader', () => {
 });
 
 describe('SiteFooter', () => {
-  it('renders the CUNY logo', () => {
+  it('renders the footer title', () => {
     render(SiteFooter);
-    expect(
-      screen.getByLabelText(
-        'Craig Newmark Graduate School of Journalism at CUNY'
-      )
-    ).toBeTruthy();
+    expect(screen.getByText('Welcome to Issue Number One')).toBeTruthy();
   });
 
-  it('renders footer navigation links', () => {
+  it('renders footer credit', () => {
     render(SiteFooter);
-    expect(screen.getByText('ABOUT US')).toBeTruthy();
-    expect(screen.getByText('CONTACT US')).toBeTruthy();
+    expect(screen.getByText('Elegant Themes')).toBeTruthy();
+    expect(screen.getByText('WordPress')).toBeTruthy();
   });
 });
