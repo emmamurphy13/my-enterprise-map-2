@@ -238,6 +238,7 @@
     highlightedFeature
       ? `${formatCompactCurrency(highlightedFeature.properties.totalExpenditures)} spent`
       : ''
+  );
 
   const weirData = $derived.by(() => ({
     type: 'FeatureCollection',
@@ -253,7 +254,6 @@
     type: 'FeatureCollection',
     features: pointFeatures.filter((f) => f.properties.projectId === 'TPN-051622'),
   }));
-  );
 
   const totals = $derived.by(() =>
     filteredFeatures.reduce(
