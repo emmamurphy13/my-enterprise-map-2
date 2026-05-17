@@ -8,6 +8,7 @@
   import Legend from '$lib/components/Maps/Legend.svelte';
   import Map from '$lib/components/Maps/Map.svelte';
   import MapLayer from '$lib/components/Maps/MapLayer.svelte';
+  import ImageLayer from '$lib/components/Maps/ImageLayer.svelte';
   import bundledPointsRaw from '$lib/data/arpa-project-points.geojson?raw';
   const bundledPoints = JSON.parse(bundledPointsRaw);
 
@@ -237,6 +238,21 @@
     highlightedFeature
       ? `${formatCompactCurrency(highlightedFeature.properties.totalExpenditures)} spent`
       : ''
+
+  const weirData = $derived.by(() => ({
+    type: 'FeatureCollection',
+    features: pointFeatures.filter((f) => f.properties.projectId === 'TPN-195614'),
+  }));
+
+  const aquariumData = $derived.by(() => ({
+    type: 'FeatureCollection',
+    features: pointFeatures.filter((f) => f.properties.projectId === 'TPN-255980'),
+  }));
+
+  const alabamaJailData = $derived.by(() => ({
+    type: 'FeatureCollection',
+    features: pointFeatures.filter((f) => f.properties.projectId === 'TPN-051622'),
+  }));
   );
 
   const totals = $derived.by(() =>
@@ -539,6 +555,27 @@
             'circle-stroke-color': '#ffffff',
             'circle-opacity': 0.86,
           }}
+          popup={buildPopup}
+        />
+        <ImageLayer
+          id="weir-community-center"
+          imageUrl="{base}/communitycenter.jpg"
+          data={weirData}
+          iconSize={0.07}
+          popup={buildPopup}
+        />
+        <ImageLayer
+          id="syracuse-aquarium"
+          imageUrl="{base}/fish.png"
+          data={aquariumData}
+          iconSize={0.07}
+          popup={buildPopup}
+        />
+        <ImageLayer
+          id="alabama-jail"
+          imageUrl="{base}/jail.avif"
+          data={alabamaJailData}
+          iconSize={0.07}
           popup={buildPopup}
         />
         <MapLayer
