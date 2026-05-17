@@ -2814,32 +2814,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -84.651212,
-          42.0351984
-        ]
-      },
-      "properties": {
-        "projectId": "TPN-147715",
-        "recipientId": "RCP-015781",
-        "recipientName": "Scipio Township, MI",
-        "state": "MI",
-        "recipientType": "Local Government",
-        "projectName": "town hall",
-        "completionStatus": "Completed 50% or more",
-        "categoryGroup": "6-Revenue Replacement",
-        "category": "6.1-Provision of Government Services",
-        "description": "new town hall for meetings",
-        "totalObligations": 188216,
-        "totalExpenditures": 170000,
-        "coordinateSource": "city-geocode",
-        "jitterIndex": 0
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -83.275795,
           42.8397967
         ]

@@ -75,52 +75,46 @@
   const BUILDING_TYPES = [
     'Fire Station',
     'City Hall / Town Hall / Municipal Building',
-    'Jail / Justice / Forensic Facility',
-    'Police Station / Public Safety',
-    'Community Center / Recreation',
+    'Criminal Justice',
+    'Public Safety',
+    'Recreation',
     'Library',
-    'Shelter / Housing (Homeless, DV, Transitional)',
+    'Housing',
     'Animal Shelter',
-    'Ambulance Station / EMS',
-    'School / Training / Career Center',
-    'Mental Health / Human Services Facility',
+    'Medical',
+    'Education',
+    'Mental Health and Human Services',
     'Senior Center',
     'Emergency Operations Center',
-    'Courthouse',
-
     'Food Pantry / Food Bank',
     'Public Works / Municipal Garage',
-    'Aquarium',
-    'Historic / Cultural Facility',
-    'Medical Examiner / Morgue',
-    'Sports',
   ];
 
   function classifyBuilding(name) {
     const n = (name ?? '').toLowerCase();
-    if (/medical examiner|morgue/.test(n)) return 'Medical Examiner / Morgue';
-    if (/aquarium/.test(n)) return 'Aquarium';
+    if (/medical examiner|morgue/.test(n)) return 'Medical';
+    if (/aquarium/.test(n)) return 'Recreation';
     if (/animal shelter|animal cage/.test(n)) return 'Animal Shelter';
-    if (/ambulance|\bems\b/.test(n)) return 'Ambulance Station / EMS';
+    if (/ambulance|\bems\b/.test(n)) return 'Medical';
     if (/emergency operations|emergency management operations/.test(n)) return 'Emergency Operations Center';
     if (/food pantry|food bank/.test(n)) return 'Food Pantry / Food Bank';
-    if (/public school/.test(n)) return 'School / Training / Career Center';
-    if (/fairground|farmer.{0,3}s? market|\bag &\b|agriculture/.test(n)) return 'Community Center / Recreation';
-    if (/medical and behavioral health facility/.test(n)) return 'Jail / Justice / Forensic Facility';
-    if (/mental health|behavioral health|human services|counseling service/.test(n)) return 'Mental Health / Human Services Facility';
+    if (/public school/.test(n)) return 'Education';
+    if (/fairground|farmer.{0,3}s? market|\bag &\b|agriculture/.test(n)) return 'Recreation';
+    if (/medical and behavioral health facility/.test(n)) return 'Criminal Justice';
+    if (/mental health|behavioral health|human services|counseling service/.test(n)) return 'Mental Health and Human Services';
     if (/senior center|senior citizen/.test(n)) return 'Senior Center';
-    if (/domestic violence|\bdvip\b|homeless|shelter|transitional|poverello|homeward point|family motel|miracle of cedar street/.test(n)) return 'Shelter / Housing (Homeless, DV, Transitional)';
+    if (/domestic violence|\bdvip\b|homeless|shelter|transitional|poverello|homeward point|family motel|miracle of cedar street/.test(n)) return 'Housing';
     if (/fire station|fire department|fire dept|fire district|firehouse|volunteer fire|\bvfd\b|fire rescue|\bfire\b/.test(n)) return 'Fire Station';
     if (/city hall|town hall|municipal building|civic center|township building/.test(n)) return 'City Hall / Town Hall / Municipal Building';
-    if (/\bjail\b|justice center|forensic|prison|evidence (facility|processing|room)|corrections building|sheriff.{0,5}office/.test(n)) return 'Jail / Justice / Forensic Facility';
-    if (/police|\bpd building\b|public safety (building|facility|$)/.test(n)) return 'Police Station / Public Safety';
-    if (/community center|recreation center|\bpark\b|centers for youth|adult community/.test(n)) return 'Community Center / Recreation';
+    if (/\bjail\b|justice center|forensic|prison|evidence (facility|processing|room)|corrections building|sheriff.{0,5}office/.test(n)) return 'Criminal Justice';
+    if (/police|\bpd building\b|public safety (building|facility|$)/.test(n)) return 'Public Safety';
+    if (/community center|recreation center|\bpark\b|centers for youth|adult community/.test(n)) return 'Recreation';
     if (/library/.test(n)) return 'Library';
-    if (/school|career center|technical center|training center|education center|college|university/.test(n)) return 'School / Training / Career Center';
-    if (/courthouse|transition facility/.test(n)) return 'Courthouse';
+    if (/school|career center|technical center|training center|education center|college|university/.test(n)) return 'Education';
+    if (/courthouse|transition facility/.test(n)) return 'Criminal Justice';
     if (/public works|municipal garage/.test(n)) return 'Public Works / Municipal Garage';
-    if (/historic|cultural|artifact/.test(n)) return 'Historic / Cultural Facility';
-    return 'Sports';
+    if (/historic|cultural|artifact/.test(n)) return 'Recreation';
+    return 'Recreation';
   }
 
   const highlightedProjectId = 'TPN-051622';
