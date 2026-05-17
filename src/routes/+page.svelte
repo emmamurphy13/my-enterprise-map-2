@@ -440,17 +440,6 @@
 
     <div class="filter-panel">
       <div class="filter-top-row">
-        <div class="filter-group">
-          <label class="filter-label" for="filter-spending">Spending</label>
-          <select id="filter-spending" class="filter-select" bind:value={filterSpending}>
-            <option value="any">Any amount</option>
-            <option value="zero">$0 spent</option>
-            <option value="under100k">Under $100K</option>
-            <option value="100k-1m">$100K – $1M</option>
-            <option value="1m-10m">$1M – $10M</option>
-            <option value="over10m">Over $10M</option>
-          </select>
-        </div>
       </div>
       <div class="filter-group filter-group--building">
         <fieldset class="filter-fieldset">
