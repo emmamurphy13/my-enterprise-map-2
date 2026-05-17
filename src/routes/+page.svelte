@@ -451,38 +451,6 @@
             <option value="over10m">Over $10M</option>
           </select>
         </div>
-        <div class="filter-group">
-          <label class="filter-label" for="filter-govtype">Gov. type</label>
-          <select id="filter-govtype" class="filter-select" bind:value={filterRecipientType}>
-            <option value="all">All</option>
-            <option value="Local Government">Local Government</option>
-            <option value="State/DC">State / DC</option>
-          </select>
-        </div>
-        <div class="filter-group filter-group--status">
-          <fieldset class="filter-fieldset">
-            <legend class="filter-label">Status</legend>
-            <div class="checkbox-group">
-              {#each ALL_STATUSES as s}
-                <label class="checkbox-item">
-                  <input
-                    type="checkbox"
-                    checked={filterStatuses.includes(s)}
-                    onchange={(e) => {
-                      filterStatuses = e.target.checked
-                        ? [...filterStatuses, s]
-                        : filterStatuses.filter((x) => x !== s);
-                    }}
-                  />
-                  {s === 'Completed 50% or more' ? '≥50% complete'
-                    : s === 'Completed less than 50%' ? '<50% complete'
-                    : s === 'Not Started' ? 'Not started'
-                    : s}
-                </label>
-              {/each}
-            </div>
-          </fieldset>
-        </div>
       </div>
       <div class="filter-group filter-group--building">
         <fieldset class="filter-fieldset">
