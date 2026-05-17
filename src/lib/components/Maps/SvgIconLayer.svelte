@@ -29,7 +29,7 @@
       .addTo(ctx.getMap());
   }
 
-  function svgToCanvas(svg, fillColor, sizePx) {
+  function svgToImageData(svg, fillColor, sizePx) {
     return new Promise((resolve, reject) => {
       const colored = svg.replace(/currentColor/g, fillColor);
       const encoded = encodeURIComponent(colored);
@@ -38,8 +38,10 @@
         const canvas = document.createElement('canvas');
         canvas.width = sizePx;
         canvas.height = sizePx;
-        canvas.getContext('2d').drawImage(img, 0, 0, sizePx, sizePx);
-        resolve(canvas);
+        const ctx2d = canvas.getContext('2d');
+        ctx2d.drawImage(img, 0, 0, sizePx, sizePx);
+        const imageData = ctx2d.getImageData(0, 0, sizePx, sizePx);
+        resolve({ width: sizePx, height: sizePx, data: imageData.data });
       };
       img.onerror = reject;
       img.src = `data:image/svg+xml;charset=utf-8,${encoded}`;
@@ -52,7 +54,7 @@
 
     let canvas;
     try {
-      canvas = await svgToCanvas(svgMarkup, color, size);
+      canvas = await svgToImageData(svgMarkup, color, size);
     } catch (err) {
       console.error(`SvgIconLayer: failed to render icon "${id}"`, err);
       return;
