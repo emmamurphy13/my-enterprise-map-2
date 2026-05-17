@@ -8,7 +8,7 @@
   import Legend from '$lib/components/Maps/Legend.svelte';
   import Map from '$lib/components/Maps/Map.svelte';
   import MapLayer from '$lib/components/Maps/MapLayer.svelte';
-  import ImageLayer from '$lib/components/Maps/ImageLayer.svelte';
+  import SvgIconLayer from '$lib/components/Maps/SvgIconLayer.svelte';
   import bundledPointsRaw from '$lib/data/arpa-project-points.geojson?raw';
   const bundledPoints = JSON.parse(bundledPointsRaw);
 
@@ -254,6 +254,41 @@
     type: 'FeatureCollection',
     features: pointFeatures.filter((f) => f.properties.projectId === 'TPN-051622'),
   }));
+
+  const fishSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40">
+    <ellipse cx="17" cy="20" rx="12" ry="8" fill="currentColor"/>
+    <path d="M27 20 L36 13 L36 27 Z" fill="currentColor"/>
+    <circle cx="10" cy="18" r="2.5" fill="white"/>
+  </svg>`;
+
+  const houseSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40">
+    <polygon points="20,4 36,20 4,20" fill="currentColor"/>
+    <rect x="7" y="19" width="26" height="17" fill="currentColor"/>
+    <rect x="16" y="25" width="8" height="11" fill="white"/>
+  </svg>`;
+
+  const jailSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40">
+    <rect x="3" y="5" width="34" height="32" rx="2" fill="currentColor"/>
+    <rect x="10" y="5" width="4" height="32" fill="white"/>
+    <rect x="18" y="5" width="4" height="32" fill="white"/>
+    <rect x="26" y="5" width="4" height="32" fill="white"/>
+    <rect x="3" y="17" width="34" height="4" fill="white"/>
+  </svg>`;
+
+  const weirColor = $derived.by(() => {
+    const f = pointFeatures.find((f) => f.properties.projectId === 'TPN-195614');
+    return statusColors[f?.properties.completionStatus] ?? statusColors['Not reported'];
+  });
+
+  const aquariumColor = $derived.by(() => {
+    const f = pointFeatures.find((f) => f.properties.projectId === 'TPN-255980');
+    return statusColors[f?.properties.completionStatus] ?? statusColors['Not reported'];
+  });
+
+  const alabamaJailColor = $derived.by(() => {
+    const f = pointFeatures.find((f) => f.properties.projectId === 'TPN-051622');
+    return statusColors[f?.properties.completionStatus] ?? statusColors['Not reported'];
+  });
 
   const totals = $derived.by(() =>
     filteredFeatures.reduce(
@@ -557,25 +592,28 @@
           }}
           popup={buildPopup}
         />
-        <ImageLayer
+        <SvgIconLayer
           id="weir-community-center"
-          imageUrl="{base}/communitycenter.jpg"
+          svgMarkup={houseSvg}
+          color={weirColor}
+          size={40}
           data={weirData}
-          iconSize={0.07}
           popup={buildPopup}
         />
-        <ImageLayer
+        <SvgIconLayer
           id="syracuse-aquarium"
-          imageUrl="{base}/fish.png"
+          svgMarkup={fishSvg}
+          color={aquariumColor}
+          size={40}
           data={aquariumData}
-          iconSize={0.07}
           popup={buildPopup}
         />
-        <ImageLayer
+        <SvgIconLayer
           id="alabama-jail"
-          imageUrl="{base}/jail.avif"
+          svgMarkup={jailSvg}
+          color={alabamaJailColor}
+          size={40}
           data={alabamaJailData}
-          iconSize={0.07}
           popup={buildPopup}
         />
         <MapLayer
