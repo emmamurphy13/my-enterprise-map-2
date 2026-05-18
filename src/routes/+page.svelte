@@ -119,7 +119,7 @@
     return 'Recreation';
   }
 
-  const highlightedProjectId = 'TPN-051622';
+
   const recentPosts = [
     {
       title: '5 Things to Watch Out For in the Upcoming Trade Report',
@@ -278,10 +278,6 @@
     type: 'FeatureCollection',
     features: filteredFeatures.filter((f) => f.properties.projectId === COMMUNITY_CENTER_ID),
   }));
-
-  const highlightedFeature = $derived.by(
-    () => filteredFeatures.find((f) => f.properties.projectId === highlightedProjectId) ?? null
-  );
 
 
   const totals = $derived.by(() =>
@@ -468,12 +464,7 @@
         <span class="label">Total expenditures</span>
         <strong>{formatCompactCurrency(totals.expenditures)}</strong>
       </div>
-      {#if highlightedFeature}
-        <div class="summary-card highlight-card">
-          <span class="label">Alabama highlighted project</span>
-          <strong>{formatCompactCurrency(highlightedFeature.properties.totalExpenditures)}</strong>
-        </div>
-      {/if}
+
     </div>
 
     <Legend
