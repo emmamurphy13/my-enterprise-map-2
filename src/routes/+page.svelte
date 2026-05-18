@@ -8,7 +8,7 @@
   import Legend from '$lib/components/Maps/Legend.svelte';
   import Map from '$lib/components/Maps/Map.svelte';
   import MapLayer from '$lib/components/Maps/MapLayer.svelte';
-  import SvgIconLayer from '$lib/components/Maps/SvgIconLayer.svelte';
+
   import bundledPointsRaw from '$lib/data/arpa-project-points.geojson?raw';
   const bundledPoints = JSON.parse(bundledPointsRaw);
 
@@ -239,60 +239,6 @@
       ? `${formatCompactCurrency(highlightedFeature.properties.totalExpenditures)} spent`
       : ''
   );
-
-  const weirData = $derived.by(() => ({
-    type: 'FeatureCollection',
-    features: pointFeatures.filter((f) => f.properties.projectId === 'TPN-195614'),
-  }));
-
-  const aquariumData = $derived.by(() => ({
-    type: 'FeatureCollection',
-    features: pointFeatures.filter((f) => f.properties.projectId === 'TPN-255980'),
-  }));
-
-  const alabamaJailData = $derived.by(() => ({
-    type: 'FeatureCollection',
-    features: pointFeatures.filter((f) => f.properties.projectId === 'TPN-051622'),
-  }));
-
-  const fishSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
-    <path d="M34 24 L44 14 L40 24 L44 34 Z" fill="currentColor"/>
-    <ellipse cx="22" cy="24" rx="17" ry="12" fill="currentColor"/>
-    <path d="M22 12 Q26 6 30 12" fill="currentColor"/>
-    <circle cx="11" cy="20" r="5" fill="white"/>
-    <circle cx="12" cy="20" r="2" fill="currentColor" opacity="0.5"/>
-  </svg>`;
-
-  const houseSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
-    <polygon points="24,3 46,22 2,22" fill="currentColor"/>
-    <rect x="7" y="21" width="34" height="24" fill="currentColor"/>
-    <rect x="18" y="29" width="12" height="16" rx="2" fill="white"/>
-    <rect x="28" y="23" width="8" height="8" rx="1" fill="white"/>
-  </svg>`;
-
-  const jailSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
-    <rect x="4" y="4" width="40" height="40" rx="3" fill="currentColor"/>
-    <rect x="9" y="9" width="30" height="30" fill="white"/>
-    <rect x="14" y="9" width="4" height="30" fill="currentColor"/>
-    <rect x="22" y="9" width="4" height="30" fill="currentColor"/>
-    <rect x="30" y="9" width="4" height="30" fill="currentColor"/>
-    <rect x="9" y="21" width="30" height="4" fill="currentColor"/>
-  </svg>`;
-
-  const weirColor = $derived.by(() => {
-    const f = pointFeatures.find((f) => f.properties.projectId === 'TPN-195614');
-    return statusColors[f?.properties.completionStatus] ?? statusColors['Not reported'];
-  });
-
-  const aquariumColor = $derived.by(() => {
-    const f = pointFeatures.find((f) => f.properties.projectId === 'TPN-255980');
-    return statusColors[f?.properties.completionStatus] ?? statusColors['Not reported'];
-  });
-
-  const alabamaJailColor = $derived.by(() => {
-    const f = pointFeatures.find((f) => f.properties.projectId === 'TPN-051622');
-    return statusColors[f?.properties.completionStatus] ?? statusColors['Not reported'];
-  });
 
   const totals = $derived.by(() =>
     filteredFeatures.reduce(
@@ -596,30 +542,7 @@
           }}
           popup={buildPopup}
         />
-        <SvgIconLayer
-          id="weir-community-center"
-          svgMarkup={houseSvg}
-          color={weirColor}
-          size={48}
-          data={weirData}
-          popup={buildPopup}
-        />
-        <SvgIconLayer
-          id="syracuse-aquarium"
-          svgMarkup={fishSvg}
-          color={aquariumColor}
-          size={48}
-          data={aquariumData}
-          popup={buildPopup}
-        />
-        <SvgIconLayer
-          id="alabama-jail"
-          svgMarkup={jailSvg}
-          color={alabamaJailColor}
-          size={48}
-          data={alabamaJailData}
-          popup={buildPopup}
-        />
+
         <MapLayer
           id="highlighted-alabama-project-label"
           type="symbol"
