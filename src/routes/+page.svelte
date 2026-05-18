@@ -373,78 +373,123 @@
 
     <ArticleBody>
       <p class="dropcap">
-        This county was far from alone in the way that it chose to use its ARPA dollars. While the
-        "American Rescue Plan Act" sounds like a superhero funding package, bringing aid to towns
-        suffering from ailments prompted by COVID, in reality it wasn't exactly that. It was a $1.9
-        trillion stimulus package aimed at getting people and governments to spend, so a sleepy
-        economy could function again after the pandemic. While most of the money went to government
-        administration and repairing sewer systems and highways, some embarked on more extensive
-        projects that like [anecdote] and communities had a range of opinions on how the money was
-        used.
+        The 770 residents of Weir, Texas celebrated the opening of their brand new community center
+        about two years ago. Since then its aluminum structure has held many local parties and
+        community events and served as a designated shelter for prairie residents in the case of an
+        emergency.
+      </p>
+      <p>[Quote from Mayor]</p>
+      <p>
+        For a tiny town struggling with a tight budget, this small extravagance would usually be out
+        of reach, but in 2021 the American Plan Rescue Act awarded Weir with just over $131,000,
+        which it used to build this meeting center.
       </p>
       <p>
-        ARPA grants helped construct well over 200 new buildings across the country, over 60 of
-        which are still being built, according to data last updated by the U.S. Treasury on
-        September, 30, 2025. While some of these programs have helped build Town Halls in rural
-        communities, libraries and animal shelters, many were used to build jails and police
-        departments, projects that were very sensitive especially following the Black Lives Matter
-        Protests.
+        While COVID relief money sounds like a superhero aid package with the purpose of healing
+        towns ravaged by COVID, places like Weir were well within their rights to use the funds for
+        infrastructure. In fact, the $1.9 trillion of ARPA funds, which were intended primarily to
+        stimulate a sleepy economy through investment, aided in the purchasing of materials and
+        employment of construction workers, helping fund over 200 new buildings projects like Weir's.
+      </p>
+      <p>
+        The problem: not all towns were as prompt in spending their money as Weir. Five years after
+        the grants were announced, many of the new buildings have yet to get off the ground. And in
+        some communities locals aren't upset about that, leading critics to question whether the
+        federal government should have even spent this money.
+      </p>
+      <p>
+        "They just wanted to get the money out," said Bill Glasgall, Public Finance Adviser at The
+        Volcker Alliance and Fellow at Penn Institute for Urban Research. "They aired on the side of
+        generosity, and they were probably way too generous."
+      </p>
+      <p>
+        Fully constructed or not, new construction projects are some of the most controversial ways
+        local governments spent ARPA money. While new animal shelters, town halls and recreation
+        centers popped up, less universally possible projects like police stations and jails were
+        also funded following the Black Lives Matter protests.
       </p>
 
       {@html `<iframe title="Types of Projects Built" aria-label="Bar Chart" id="datawrapper-chart-LQT60" src="https://datawrapper.dwcdn.net/LQT60/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="553" data-external="1"></iframe>`}
 
       <p>
         In Fall of 2021, Alabama announced that it would use $400 million of its ARPA grants to
-        build two new prisons. Even for a state as focused on public safety as Alabama this ruffled
-        some feathers. Multiple federal lawsuits were filed against the use of relief funding for a
-        prison but they were unsuccessful. The American Civil Liberties Union and Southern Poverty
-        Law Center have both been outspoken against the facility.
+        build two new prisons. Even for a red state as focused on public safety as Alabama, this
+        ruffled some feathers. Multiple federal lawsuits were filed against the use of relief funding
+        for a prison, but they were unsuccessful. The American Civil Liberties Union and Southern
+        Poverty Law Center have both been outspoken opponents of the facility.
       </p>
-      <blockquote>
-        <p>
-          "Alabama's healthcare system is in dire straits. We have rural hospitals and clinics that
-          are closing," said SPLC Alabama Policy Director Jerome Dees. "We've got a hospital in
-          Montgomery that's filing for bankruptcy."
-        </p>
-      </blockquote>
       <p>
-        Still outside of the protest from advocacy organizations, there hasn't been the outrage that
-        might have been felt in other states or cities. Mildred Warner, a Cornell Professor of City
-        and Regional planning, says that's by design.
+        "Alabama's healthcare system is in dire straits. We have rural hospitals and clinics that are
+        closing," said SPLC Alabama Policy Director Jerome Dees. "We've got a hospital in Montgomery
+        that's filing for bankruptcy."
       </p>
-      <blockquote>
-        <p>
-          "You have to be politically savvy about the community you live in and what's going to work
-          for them," said Warner. "If you're in Alabama and you lead with equity, that's a political
-          nonstarter, so lead with the jail."
-        </p>
-      </blockquote>
       <p>
-        States are required to keep their prisons in good condition and Alabama's prisons needed
-        renovation. Even Dees admits there are benefits to a correctional facility revamp for
-        prisoners. According to Warner's research, using ARPA funds publicly allowed Alabama to
-        please their majority conservative constituents while also funding social services less
-        publicly.
+        Still, outside of the protest from advocacy organizations, there hasn't been the outrage in
+        Alabama that might have been felt in other states or cities. Mildred Warner, a Cornell
+        Professor of City and Regional planning, says that's by design. She also says that
+        progressive groups like SPLC and the ACLU might be less disturbed if they considered the
+        overall effect of the legislation and Alabama's general spending plans.
+      </p>
+      <p>
+        "You have to be politically savvy about the community you live in and what's going to work
+        for them," said Warner. "If you're in Alabama and you lead with equity, that's a political
+        nonstarter, so lead with the jail."
+      </p>
+      <p>
+        States are required to keep their prisons in good condition, and Alabama's prisons needed
+        renovation. Even Dees admits there are benefits for prisoners in a new correctional facility.
+        According to Warner's research, using ARPA funds publicly allowed Alabama to please their
+        majority conservative constituents while also funding social services less publicly.
       </p>
       <p>
         Whether or not each project was well received is far from the only controversy surrounding
         the Recovery Plan. Many economists, politicians and voters blame Biden's stimulus for
-        inflation. While this is hotly debated it's unlikely that it was the cause of rising prices
-        that occurred around the globe, but it's possible it had some effect on inflation in America.
+        inflation. While this is hotly debated and it's possible ARPA had some effect on inflation in
+        America, most economists agree that it's unlikely that ARPA was the cause of rising prices
+        that occurred around the globe, or even a major factor in rising prices in the pandemic-era
+        US.
       </p>
       <p>
-        But the plan is also praised for helping to lower unemployment. After the money was doled
-        out unemployment dropped rapidly, and while, again, it's unlikely that the stimulus was the
-        primary cause, it's also likely that it played a role. Take Alabama as an example – the
-        prisons are still being constructed and won't be finished until 2025. This gave builders,
-        contractors, architects and engineers a large, long term project to work on.
+        But the plan has also been praised for helping to lower unemployment. After the money was
+        doled out, unemployment dropped rapidly, and while, again, it's unlikely that the stimulus
+        was the primary cause, it's also likely that it played a role. Take Alabama as an example –
+        the prisons are still being constructed and won't be finished until 2025. This gave builders,
+        contractors, architects and engineers a large, long-term project to work on.
       </p>
 
       {@html `<iframe title="Unemployment Rate" aria-label="Line chart" id="datawrapper-chart-LyjDA" src="https://datawrapper.dwcdn.net/LyjDA/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="394" data-external="1"></iframe>`}
 
       <p>
-        A similar example is ongoing in Syracuse, NY. The Onondaga County Legislature announced an
-        $85 million aquarium not long after
+        In Syracuse, NY, a seemingly less controversial investment has stirred up a lot of trouble.
+      </p>
+      <p>
+        The Onondaga County Legislature announced the construction of an $85 million aquarium not
+        long after the county was awarded with $89 million in pandemic relief funding. The underwater
+        experience is set to open this Fall, and the $6.6 million of ARPA funds used for the aquarium
+        has been spent, but the building is far from being ready to hold fish.
+      </p>
+      <p>
+        But many residents are protesting not because they can't see an octopus – they're upset that
+        money that could have been spent on fixing the city's lead pipes or tackling poverty was used
+        on an investment they don't believe will bring new visitors and revenue to the city as the
+        County Executive promised.
+      </p>
+      <p>
+        "My grandchildren, they'll go to the aquarium once every two years," said Sharon Sherman, a
+        50-year Syracuse resident and advocate. "What's the point? I mean, how does it make things
+        better for my grandchildren growing up?"
+      </p>
+      <p>
+        Sherman and local politicians have voiced concerns about whether the county can afford
+        maintenance on the aquarium, but this isn't just a problem for Syracuse. The Government
+        Finance Officers Association advised against ARPA being used for investments that would
+        require reoccurring investments. Fixing pot holes is a one-time expense, but the aquarium,
+        jail and even community center will require additional maintenance – in some cases for
+        projects that weren't even widely liked to begin with.
+      </p>
+      <p>
+        "Who's going to pay for the continuing expenditures?" said Glasgall. "It's kind of assumed
+        that the tooth fairy will cover it, I guess. But that's the concern."
       </p>
     </ArticleBody>
 
