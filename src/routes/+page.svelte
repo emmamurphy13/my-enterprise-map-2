@@ -125,7 +125,7 @@
       title: '5 Things to Watch Out For in the Upcoming Trade Report',
       date: '2026-05-05',
       url: 'https://issuenumberone.journalism.cuny.edu/2026/05/05/5-things-to-watch-out-for-in-the-upcoming-trade-report/',
-      image: null,
+      image: `${base}/images/post-trade-report.jpeg`,
     },
     {
       title: 'The Sun is Still Shining on US Solar',
@@ -137,13 +137,13 @@
       title: 'U.S. Manufacturing Growth Driven by War-Related Uncertainties',
       date: '2026-05-01',
       url: 'https://issuenumberone.journalism.cuny.edu/2026/05/01/u-s-manufacturing-growth-driven-by-war-related-uncertainties/',
-      image: null,
+      image: `${base}/images/post-manufacturing.jpg`,
     },
     {
       title: 'Five things to watch for in the March durable goods report',
       date: '2026-04-28',
       url: 'https://issuenumberone.journalism.cuny.edu/2026/04/28/five-things-to-watch-for-in-the-march-durable-goods-report-2/',
-      image: null,
+      image: `${base}/images/post-durable-goods.jpg`,
     },
   ];
 
