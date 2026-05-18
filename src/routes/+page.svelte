@@ -31,8 +31,8 @@
 
   const EMPTY_FC = { type: 'FeatureCollection', features: [] };
 
-  const headline = 'ARPA construction projects across the United States';
-  const byline = 'NYCity News Service';
+  const headline = 'Pandemic Relief dollars are still funding projects across the U.S.';
+  const byline = 'Emma Ferrara';
   const pubDate = '2026-05-09';
 
   const currencyFormatter = new Intl.NumberFormat('en-US', {
@@ -157,6 +157,20 @@
   let filterStatuses = $state([]);
   let filterRecipientType = $state('all');
   let filterBuildings = $state([]);
+
+  let sidebarMode = $state('map');
+  let articleBodyEl = $state(null);
+
+  $effect(() => {
+    const el = articleBodyEl;
+    if (!el || typeof IntersectionObserver === 'undefined') return;
+    const observer = new IntersectionObserver(
+      ([entry]) => { sidebarMode = entry.isIntersecting ? 'article' : 'map'; },
+      { threshold: 0.1 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  });
 
   function handleDescriptionClick(e) {
     const btn = e.target.closest('.popup-info-btn');
@@ -368,9 +382,132 @@
 <!-- Two-column layout: article + map on the left, sidebar on the right -->
 <div class="page-layout">
 
-  <article class="article-column">
+  <div class="article-header-row">
     <ArticleHeader {headline} {byline} {pubDate} />
+  </div>
 
+  <article class="article-column">
+
+    <div class="intro-box">
+      <strong class="intro-box-headline">Local governments have 6 months to use ARPA dollars</strong>
+      <p class="intro-box-body">Many projects funded by former President Biden's stimulus package are still being constructed. If they don't spend their grants by the end of this year the federal government can take the money back. This map displays data reported to the U.S. treasury by local governments as of September 30, 2025.</p>
+    </div>
+
+    <section class="map-section" aria-label="All project points">
+
+    {#if loading}
+      <div class="loading-panel">Loading project points…</div>
+    {:else if errorMessage}
+      <div class="loading-panel error">{errorMessage}</div>
+    {:else}
+      <Map
+        longitude={-98}
+        latitude={39}
+        zoom={3.3}
+        minZoom={2.5}
+        maxBounds={[[-180, 10], [-50, 75]]}
+        theme="positron"
+        height={500}
+        border
+        credit=""
+      >
+        <MapLayer
+          id="state-lines"
+          type="line"
+          data={statesData}
+          paint={{
+            'line-color': '#aaaaaa',
+            'line-width': 0.8,
+            'line-opacity': 0.9,
+          }}
+        />
+        <MapLayer
+          id="state-labels"
+          type="symbol"
+          data={statesData}
+          layout={{
+            'text-field': ['get', 'abbrev'],
+            'text-size': 10,
+            'text-font': ['Open Sans Bold'],
+            'text-allow-overlap': false,
+            'text-ignore-placement': false,
+          }}
+          paint={{
+            'text-color': '#444444',
+            'text-halo-color': 'rgba(255,255,255,0.85)',
+            'text-halo-width': 1.5,
+          }}
+        />
+        <MapLayer
+          id="project-points"
+          type="circle"
+          data={pointLayerData}
+          paint={{
+            'circle-color': [
+              'match',
+              ['get', 'completionStatus'],
+              'Completed', statusColors.Completed,
+              'Completed 50% or more', statusColors['Completed 50% or more'],
+              'Completed less than 50%', statusColors['Completed less than 50%'],
+              'Cancelled', statusColors.Cancelled,
+              'Not Started', statusColors['Not Started'],
+              statusColors['Not reported'],
+            ],
+            'circle-radius': [
+              'step', ['get', 'totalExpenditures'],
+              5, 100_000, 6, 1_000_000, 7, 5_000_000, 8.5, 10_000_000, 10,
+            ],
+            'circle-stroke-width': 1.2,
+            'circle-stroke-color': '#ffffff',
+            'circle-opacity': 0.86,
+          }}
+          popup={buildPopup}
+        />
+        <SvgIconLayer
+          id="weir-community-center"
+          svgMarkup={communityCenterSvg}
+          color={statusColors.Completed}
+          size={24}
+          data={communityCenterData}
+          popup={buildPopup}
+        />
+        <SvgIconLayer
+          id="syracuse-aquarium"
+          svgMarkup={fishSvg}
+          color={statusColors.Completed}
+          size={32}
+          data={aquariumData}
+          popup={buildPopup}
+        />
+        <SvgIconLayer
+          id="alabama-jail"
+          svgMarkup={jailSvg}
+          color="#FACC15"
+          size={24}
+          data={alabamaJailData}
+          popup={buildPopup}
+        />
+      </Map>
+    {/if}
+
+    <div class="summary-grid" aria-label="Point map summary">
+      <div class="summary-card">
+        <span class="label">Plotted projects</span>
+        <strong>{totals.projects}</strong>
+      </div>
+      <div class="summary-card">
+        <span class="label">Total obligations</span>
+        <strong>{formatCompactCurrency(totals.obligations)}</strong>
+      </div>
+      <div class="summary-card">
+        <span class="label">Total expenditures</span>
+        <strong>{formatCompactCurrency(totals.expenditures)}</strong>
+      </div>
+    </div>
+
+    </section>
+
+    <div bind:this={articleBodyEl}>
     <ArticleBody>
       <p class="dropcap">
         The 770 residents of Weir, Texas celebrated the opening of their brand new community center
@@ -492,167 +629,54 @@
         that the tooth fairy will cover it, I guess. But that's the concern."
       </p>
     </ArticleBody>
-
-    <section class="map-section" aria-label="All project points">
-
-    <Legend
-      title="Completion status"
-      mode="categorical"
-      items={statusLegend}
-      noData={{ label: 'Not reported', color: statusColors['Not reported'] }}
-    />
-
-    <div class="filter-panel">
-      <div class="filter-top-row">
-      </div>
-      <div class="filter-group filter-group--building">
-        <fieldset class="filter-fieldset">
-          <legend class="filter-label">Building type</legend>
-          <div class="building-grid">
-            {#each BUILDING_TYPES as b}
-              <label class="checkbox-item">
-                <input
-                  type="checkbox"
-                  checked={filterBuildings.includes(b)}
-                  onchange={(e) => {
-                    filterBuildings = e.target.checked
-                      ? [...filterBuildings, b]
-                      : filterBuildings.filter((x) => x !== b);
-                  }}
-                />
-                {b}
-              </label>
-            {/each}
-          </div>
-        </fieldset>
-      </div>
-      <div class="filter-footer">
-        <span class="filter-count">
-          {filteredFeatures.length} of {pointFeatures.length} projects shown
-        </span>
-        {#if hasActiveFilters}
-          <button class="filter-clear" onclick={clearFilters}>Clear filters</button>
-        {/if}
-      </div>
     </div>
-
-    {#if loading}
-      <div class="loading-panel">Loading project points…</div>
-    {:else if errorMessage}
-      <div class="loading-panel error">{errorMessage}</div>
-    {:else}
-      <Map
-        longitude={-98}
-        latitude={39}
-        zoom={3.3}
-        minZoom={2.5}
-        maxBounds={[[-180, 10], [-50, 75]]}
-        theme="positron"
-        height={500}
-        border
-        caption="All projects with anti-overlap point offsets enabled. Point size reflects total expenditures."
-        credit="Map tiles: OpenFreeMap / OpenStreetMap contributors"
-      >
-        <MapLayer
-          id="state-lines"
-          type="line"
-          data={statesData}
-          paint={{
-            'line-color': '#aaaaaa',
-            'line-width': 0.8,
-            'line-opacity': 0.9,
-          }}
-        />
-        <MapLayer
-          id="state-labels"
-          type="symbol"
-          data={statesData}
-          layout={{
-            'text-field': ['get', 'abbrev'],
-            'text-size': 10,
-            'text-font': ['Open Sans Bold'],
-            'text-allow-overlap': false,
-            'text-ignore-placement': false,
-          }}
-          paint={{
-            'text-color': '#444444',
-            'text-halo-color': 'rgba(255,255,255,0.85)',
-            'text-halo-width': 1.5,
-          }}
-        />
-        <MapLayer
-          id="project-points"
-          type="circle"
-          data={pointLayerData}
-          paint={{
-            'circle-color': [
-              'match',
-              ['get', 'completionStatus'],
-              'Completed', statusColors.Completed,
-              'Completed 50% or more', statusColors['Completed 50% or more'],
-              'Completed less than 50%', statusColors['Completed less than 50%'],
-              'Cancelled', statusColors.Cancelled,
-              'Not Started', statusColors['Not Started'],
-              statusColors['Not reported'],
-            ],
-            'circle-radius': [
-              'step', ['get', 'totalExpenditures'],
-              5, 100_000, 6, 1_000_000, 7, 5_000_000, 8.5, 10_000_000, 10,
-            ],
-            'circle-stroke-width': 1.2,
-            'circle-stroke-color': '#ffffff',
-            'circle-opacity': 0.86,
-          }}
-          popup={buildPopup}
-        />
-        <SvgIconLayer
-          id="weir-community-center"
-          svgMarkup={communityCenterSvg}
-          color={statusColors.Completed}
-          size={24}
-          data={communityCenterData}
-          popup={buildPopup}
-        />
-        <SvgIconLayer
-          id="syracuse-aquarium"
-          svgMarkup={fishSvg}
-          color={statusColors.Completed}
-          size={32}
-          data={aquariumData}
-          popup={buildPopup}
-        />
-        <SvgIconLayer
-          id="alabama-jail"
-          svgMarkup={jailSvg}
-          color="#FACC15"
-          size={24}
-          data={alabamaJailData}
-          popup={buildPopup}
-        />
-      </Map>
-    {/if}
-
-    <div class="summary-grid" aria-label="Point map summary">
-      <div class="summary-card">
-        <span class="label">Plotted projects</span>
-        <strong>{totals.projects}</strong>
-      </div>
-      <div class="summary-card">
-        <span class="label">Total obligations</span>
-        <strong>{formatCompactCurrency(totals.obligations)}</strong>
-      </div>
-      <div class="summary-card">
-        <span class="label">Total expenditures</span>
-        <strong>{formatCompactCurrency(totals.expenditures)}</strong>
-      </div>
-    </div>
-
-    </section>
   </article>
 
   <!-- Sticky sidebar -->
   <aside class="sidebar">
-    <RecentPosts posts={recentPosts} />
+    {#if sidebarMode === 'map'}
+      <div class="sidebar-filter">
+        <Legend
+          title="Completion status"
+          mode="categorical"
+          items={statusLegend}
+          noData={{ label: 'Not reported', color: statusColors['Not reported'] }}
+        />
+        <div class="filter-panel">
+          <div class="filter-group filter-group--building">
+            <fieldset class="filter-fieldset">
+              <legend class="filter-label">Building type</legend>
+              <div class="building-grid">
+                {#each BUILDING_TYPES as b}
+                  <label class="checkbox-item">
+                    <input
+                      type="checkbox"
+                      checked={filterBuildings.includes(b)}
+                      onchange={(e) => {
+                        filterBuildings = e.target.checked
+                          ? [...filterBuildings, b]
+                          : filterBuildings.filter((x) => x !== b);
+                      }}
+                    />
+                    {b}
+                  </label>
+                {/each}
+              </div>
+            </fieldset>
+          </div>
+          <div class="filter-footer">
+            <span class="filter-count">
+              {filteredFeatures.length} of {pointFeatures.length} projects shown
+            </span>
+            {#if hasActiveFilters}
+              <button class="filter-clear" onclick={clearFilters}>Clear filters</button>
+            {/if}
+          </div>
+        </div>
+      </div>
+    {:else}
+      <RecentPosts posts={recentPosts} />
+    {/if}
   </aside>
 
 </div>
@@ -710,15 +734,44 @@
     box-sizing: border-box;
   }
 
+  .article-header-row {
+    grid-column: 1 / -1;
+  }
+
   /* ── Article column ── */
   .article-column {
     /* min-width: 0 prevents the column from overflowing the grid cell */
     min-width: 0;
   }
 
+  .intro-box {
+    border-left: 3px solid var(--color-accent);
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: var(--color-light-gray);
+    border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
+    margin-bottom: var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xxs);
+  }
+
+  .intro-box-headline {
+    font-family: var(--font-sans);
+    font-size: var(--font-size-sm);
+    color: var(--color-dark);
+    line-height: 1.3;
+  }
+
+  .intro-box-body {
+    font-family: var(--font-sans);
+    font-size: var(--font-size-xs);
+    color: var(--color-text);
+    line-height: var(--leading-body);
+    margin: 0;
+  }
+
   /* ── Map section ── */
   .map-section {
-    margin-top: var(--spacing-lg);
     margin-bottom: var(--spacing-xl);
   }
 
@@ -913,8 +966,9 @@
 
   .filter-count {
     font-family: var(--font-sans);
-    font-size: var(--font-size-xs);
-    color: var(--color-medium-gray);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-text);
   }
 
   .filter-clear {
@@ -1058,7 +1112,14 @@
   .sidebar {
     position: sticky;
     top: var(--spacing-lg);
-    padding-top: var(--spacing-lg);
+  }
+
+  .sidebar-filter .filter-panel {
+    margin-bottom: 0;
+  }
+
+  .sidebar-filter .building-grid {
+    grid-template-columns: 1fr;
   }
 
   /* ── Mobile ── */
