@@ -221,8 +221,9 @@
     filterBuildings = [];
   }
 
-  const FEATURED_IDS = new Set(['TPN-195614', 'TPN-051622']);
+  const FEATURED_IDS = new Set(['TPN-195614']);
   const AQUARIUM_ID = 'TPN-255980';
+  const JAIL_ID = 'TPN-051622';
 
   const fishSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
     <path d="M22 16 L30 10 L26 16 L30 22 Z" fill="currentColor" stroke="black" stroke-width="1.5" stroke-linejoin="round" paint-order="stroke"/>
@@ -231,10 +232,24 @@
     <circle cx="8" cy="13" r="1.2" fill="black" opacity="0.4"/>
   </svg>`;
 
+  const jailSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+    <rect x="2" y="3" width="28" height="26" rx="2" fill="currentColor" stroke="black" stroke-width="1.5" paint-order="stroke"/>
+    <rect x="7" y="3" width="3" height="26" fill="black" rx="1"/>
+    <rect x="14.5" y="3" width="3" height="26" fill="black" rx="1"/>
+    <rect x="22" y="3" width="3" height="26" fill="black" rx="1"/>
+    <path d="M13.5 16 L13.5 12 Q13.5 9 16 9 Q18.5 9 18.5 12 L18.5 16" fill="none" stroke="white" stroke-width="4" stroke-linecap="round"/>
+    <path d="M13.5 16 L13.5 12 Q13.5 9 16 9 Q18.5 9 18.5 12 L18.5 16" fill="none" stroke="black" stroke-width="2" stroke-linecap="round"/>
+    <rect x="11" y="15" width="10" height="9" rx="2" fill="white" stroke="black" stroke-width="1.5"/>
+    <circle cx="16" cy="18.5" r="1.5" fill="black"/>
+    <rect x="15.2" y="18.5" width="1.6" height="2.5" rx="0.5" fill="black"/>
+  </svg>`;
+
   const pointLayerData = $derived.by(() => ({
     type: 'FeatureCollection',
     features: filteredFeatures.filter(
-      (f) => !FEATURED_IDS.has(f.properties.projectId) && f.properties.projectId !== AQUARIUM_ID
+      (f) => !FEATURED_IDS.has(f.properties.projectId)
+          && f.properties.projectId !== AQUARIUM_ID
+          && f.properties.projectId !== JAIL_ID
     ),
   }));
 
@@ -246,6 +261,11 @@
   const aquariumData = $derived.by(() => ({
     type: 'FeatureCollection',
     features: filteredFeatures.filter((f) => f.properties.projectId === AQUARIUM_ID),
+  }));
+
+  const alabamaJailData = $derived.by(() => ({
+    type: 'FeatureCollection',
+    features: filteredFeatures.filter((f) => f.properties.projectId === JAIL_ID),
   }));
 
   const highlightedFeature = $derived.by(
@@ -584,6 +604,14 @@
           color={statusColors.Completed}
           size={32}
           data={aquariumData}
+          popup={buildPopup}
+        />
+        <SvgIconLayer
+          id="alabama-jail"
+          svgMarkup={jailSvg}
+          color="#FACC15"
+          size={32}
+          data={alabamaJailData}
           popup={buildPopup}
         />
       </Map>
