@@ -221,9 +221,9 @@
     filterBuildings = [];
   }
 
-  const FEATURED_IDS = new Set(['TPN-195614']);
   const AQUARIUM_ID = 'TPN-255980';
   const JAIL_ID = 'TPN-051622';
+  const COMMUNITY_CENTER_ID = 'TPN-195614';
 
   const fishSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
     <path d="M22 16 L30 10 L26 16 L30 22 Z" fill="currentColor" stroke="black" stroke-width="1.5" stroke-linejoin="round" paint-order="stroke"/>
@@ -244,18 +244,24 @@
     <rect x="15.2" y="18.5" width="1.6" height="2.5" rx="0.5" fill="black"/>
   </svg>`;
 
+  const communityCenterSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+    <polygon points="16,1 31,14 1,14" fill="currentColor" stroke="black" stroke-width="1.2" stroke-linejoin="round" paint-order="stroke"/>
+    <rect x="3" y="13" width="26" height="18" fill="currentColor" stroke="black" stroke-width="1.2" paint-order="stroke"/>
+    <circle cx="10" cy="19" r="2.5" fill="white"/>
+    <rect x="7.5" y="22" width="5" height="6" rx="1.5" fill="white"/>
+    <circle cx="22" cy="19" r="2.5" fill="white"/>
+    <rect x="19.5" y="22" width="5" height="6" rx="1.5" fill="white"/>
+    <circle cx="16" cy="18.5" r="2" fill="white"/>
+    <rect x="14" y="21.5" width="4" height="5" rx="1.2" fill="white"/>
+  </svg>`;
+
   const pointLayerData = $derived.by(() => ({
     type: 'FeatureCollection',
     features: filteredFeatures.filter(
-      (f) => !FEATURED_IDS.has(f.properties.projectId)
-          && f.properties.projectId !== AQUARIUM_ID
+      (f) => f.properties.projectId !== AQUARIUM_ID
           && f.properties.projectId !== JAIL_ID
+          && f.properties.projectId !== COMMUNITY_CENTER_ID
     ),
-  }));
-
-  const featuredPointsData = $derived.by(() => ({
-    type: 'FeatureCollection',
-    features: filteredFeatures.filter((f) => FEATURED_IDS.has(f.properties.projectId)),
   }));
 
   const aquariumData = $derived.by(() => ({
@@ -266,6 +272,11 @@
   const alabamaJailData = $derived.by(() => ({
     type: 'FeatureCollection',
     features: filteredFeatures.filter((f) => f.properties.projectId === JAIL_ID),
+  }));
+
+  const communityCenterData = $derived.by(() => ({
+    type: 'FeatureCollection',
+    features: filteredFeatures.filter((f) => f.properties.projectId === COMMUNITY_CENTER_ID),
   }));
 
   const highlightedFeature = $derived.by(
@@ -575,29 +586,14 @@
           }}
           popup={buildPopup}
         />
-        <MapLayer
-          id="featured-points"
-          type="circle"
-          data={featuredPointsData}
-          paint={{
-            'circle-color': [
-              'match',
-              ['get', 'completionStatus'],
-              'Completed', statusColors.Completed,
-              'Completed 50% or more', statusColors['Completed 50% or more'],
-              'Completed less than 50%', statusColors['Completed less than 50%'],
-              'Cancelled', statusColors.Cancelled,
-              'Not Started', statusColors['Not Started'],
-              statusColors['Not reported'],
-            ],
-            'circle-radius': 12,
-            'circle-stroke-width': 3,
-            'circle-stroke-color': '#111827',
-            'circle-opacity': 1,
-          }}
+        <SvgIconLayer
+          id="weir-community-center"
+          svgMarkup={communityCenterSvg}
+          color={statusColors.Completed}
+          size={32}
+          data={communityCenterData}
           popup={buildPopup}
         />
-
         <SvgIconLayer
           id="syracuse-aquarium"
           svgMarkup={fishSvg}
