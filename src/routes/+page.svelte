@@ -255,24 +255,28 @@
     features: pointFeatures.filter((f) => f.properties.projectId === 'TPN-051622'),
   }));
 
-  const fishSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40">
-    <ellipse cx="17" cy="20" rx="12" ry="8" fill="currentColor"/>
-    <path d="M27 20 L36 13 L36 27 Z" fill="currentColor"/>
-    <circle cx="10" cy="18" r="2.5" fill="white"/>
+  const fishSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+    <path d="M34 24 L44 14 L40 24 L44 34 Z" fill="currentColor"/>
+    <ellipse cx="22" cy="24" rx="17" ry="12" fill="currentColor"/>
+    <path d="M22 12 Q26 6 30 12" fill="currentColor"/>
+    <circle cx="11" cy="20" r="5" fill="white"/>
+    <circle cx="12" cy="20" r="2" fill="currentColor" opacity="0.5"/>
   </svg>`;
 
-  const houseSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40">
-    <polygon points="20,4 36,20 4,20" fill="currentColor"/>
-    <rect x="7" y="19" width="26" height="17" fill="currentColor"/>
-    <rect x="16" y="25" width="8" height="11" fill="white"/>
+  const houseSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+    <polygon points="24,3 46,22 2,22" fill="currentColor"/>
+    <rect x="7" y="21" width="34" height="24" fill="currentColor"/>
+    <rect x="18" y="29" width="12" height="16" rx="2" fill="white"/>
+    <rect x="28" y="23" width="8" height="8" rx="1" fill="white"/>
   </svg>`;
 
-  const jailSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40">
-    <rect x="3" y="5" width="34" height="32" rx="2" fill="currentColor"/>
-    <rect x="10" y="5" width="4" height="32" fill="white"/>
-    <rect x="18" y="5" width="4" height="32" fill="white"/>
-    <rect x="26" y="5" width="4" height="32" fill="white"/>
-    <rect x="3" y="17" width="34" height="4" fill="white"/>
+  const jailSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+    <rect x="4" y="4" width="40" height="40" rx="3" fill="currentColor"/>
+    <rect x="9" y="9" width="30" height="30" fill="white"/>
+    <rect x="14" y="9" width="4" height="30" fill="currentColor"/>
+    <rect x="22" y="9" width="4" height="30" fill="currentColor"/>
+    <rect x="30" y="9" width="4" height="30" fill="currentColor"/>
+    <rect x="9" y="21" width="30" height="4" fill="currentColor"/>
   </svg>`;
 
   const weirColor = $derived.by(() => {
@@ -596,7 +600,7 @@
           id="weir-community-center"
           svgMarkup={houseSvg}
           color={weirColor}
-          size={40}
+          size={48}
           data={weirData}
           popup={buildPopup}
         />
@@ -604,7 +608,7 @@
           id="syracuse-aquarium"
           svgMarkup={fishSvg}
           color={aquariumColor}
-          size={40}
+          size={48}
           data={aquariumData}
           popup={buildPopup}
         />
@@ -612,7 +616,7 @@
           id="alabama-jail"
           svgMarkup={jailSvg}
           color={alabamaJailColor}
-          size={40}
+          size={48}
           data={alabamaJailData}
           popup={buildPopup}
         />
