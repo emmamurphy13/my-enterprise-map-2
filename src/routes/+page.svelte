@@ -493,8 +493,7 @@
       </p>
     </ArticleBody>
 
-    <section class="map-section" aria-labelledby="point-map-heading">
-      <h2 id="point-map-heading">All project points</h2>
+    <section class="map-section" aria-label="All project points">
 
     <div class="summary-grid" aria-label="Point map summary">
       <div class="summary-card">
