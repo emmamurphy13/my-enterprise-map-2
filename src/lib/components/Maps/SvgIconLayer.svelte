@@ -52,9 +52,10 @@
     const map = ctx.getMap();
     if (!map) return;
 
-    let canvas;
+    const dpr = window.devicePixelRatio || 1;
+    let imageData;
     try {
-      canvas = await svgToImageData(svgMarkup, color, size);
+      imageData = await svgToImageData(svgMarkup, color, size * dpr);
     } catch (err) {
       console.error(`SvgIconLayer: failed to render icon "${id}"`, err);
       return;
@@ -67,7 +68,7 @@
     if (map.getSource(id)) map.removeSource(id);
     if (map.hasImage(id)) map.removeImage(id);
 
-    map.addImage(id, canvas);
+    map.addImage(id, imageData, { pixelRatio: dpr });
     map.addSource(id, { type: 'geojson', data });
     map.addLayer({
       id,
