@@ -495,22 +495,6 @@
 
     <section class="map-section" aria-label="All project points">
 
-    <div class="summary-grid" aria-label="Point map summary">
-      <div class="summary-card">
-        <span class="label">Plotted projects</span>
-        <strong>{totals.projects}</strong>
-      </div>
-      <div class="summary-card">
-        <span class="label">Total obligations</span>
-        <strong>{formatCompactCurrency(totals.obligations)}</strong>
-      </div>
-      <div class="summary-card">
-        <span class="label">Total expenditures</span>
-        <strong>{formatCompactCurrency(totals.expenditures)}</strong>
-      </div>
-
-    </div>
-
     <Legend
       title="Completion status"
       mode="categorical"
@@ -647,6 +631,22 @@
         />
       </Map>
     {/if}
+
+    <div class="summary-grid" aria-label="Point map summary">
+      <div class="summary-card">
+        <span class="label">Plotted projects</span>
+        <strong>{totals.projects}</strong>
+      </div>
+      <div class="summary-card">
+        <span class="label">Total obligations</span>
+        <strong>{formatCompactCurrency(totals.obligations)}</strong>
+      </div>
+      <div class="summary-card">
+        <span class="label">Total expenditures</span>
+        <strong>{formatCompactCurrency(totals.expenditures)}</strong>
+      </div>
+    </div>
+
     </section>
   </article>
 
