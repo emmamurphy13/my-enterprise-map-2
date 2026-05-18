@@ -590,7 +590,7 @@
           id="weir-community-center"
           svgMarkup={communityCenterSvg}
           color={statusColors.Completed}
-          size={32}
+          size={24}
           data={communityCenterData}
           popup={buildPopup}
         />
