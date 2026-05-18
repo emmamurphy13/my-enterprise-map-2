@@ -610,7 +610,7 @@
           id="alabama-jail"
           svgMarkup={jailSvg}
           color="#FACC15"
-          size={32}
+          size={24}
           data={alabamaJailData}
           popup={buildPopup}
         />
