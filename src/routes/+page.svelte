@@ -220,9 +220,16 @@
     filterBuildings = [];
   }
 
+  const FEATURED_IDS = new Set(['TPN-195614', 'TPN-255980', 'TPN-051622']);
+
   const pointLayerData = $derived.by(() => ({
     type: 'FeatureCollection',
-    features: filteredFeatures,
+    features: filteredFeatures.filter((f) => !FEATURED_IDS.has(f.properties.projectId)),
+  }));
+
+  const featuredPointsData = $derived.by(() => ({
+    type: 'FeatureCollection',
+    features: filteredFeatures.filter((f) => FEATURED_IDS.has(f.properties.projectId)),
   }));
 
   const highlightedFeature = $derived.by(
@@ -539,6 +546,28 @@
             'circle-stroke-width': 1.2,
             'circle-stroke-color': '#ffffff',
             'circle-opacity': 0.86,
+          }}
+          popup={buildPopup}
+        />
+        <MapLayer
+          id="featured-points"
+          type="circle"
+          data={featuredPointsData}
+          paint={{
+            'circle-color': [
+              'match',
+              ['get', 'completionStatus'],
+              'Completed', statusColors.Completed,
+              'Completed 50% or more', statusColors['Completed 50% or more'],
+              'Completed less than 50%', statusColors['Completed less than 50%'],
+              'Cancelled', statusColors.Cancelled,
+              'Not Started', statusColors['Not Started'],
+              statusColors['Not reported'],
+            ],
+            'circle-radius': 12,
+            'circle-stroke-width': 3,
+            'circle-stroke-color': '#111827',
+            'circle-opacity': 1,
           }}
           popup={buildPopup}
         />
