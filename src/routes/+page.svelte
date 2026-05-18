@@ -124,7 +124,7 @@
       title: '5 Things to Watch Out For in the Upcoming Trade Report',
       date: '2026-05-05',
       url: 'https://issuenumberone.journalism.cuny.edu/2026/05/05/5-things-to-watch-out-for-in-the-upcoming-trade-report/',
-      image: 'https://cdn.nycitynewsservice.com/blogs.dir/423/files/2026/05/AdobeStock_348581370-200x150.jpeg',
+      image: null,
     },
     {
       title: 'The Sun is Still Shining on US Solar',
@@ -136,13 +136,13 @@
       title: 'U.S. Manufacturing Growth Driven by War-Related Uncertainties',
       date: '2026-05-01',
       url: 'https://issuenumberone.journalism.cuny.edu/2026/05/01/u-s-manufacturing-growth-driven-by-war-related-uncertainties/',
-      image: 'https://cdn.nycitynewsservice.com/blogs.dir/423/files/2026/05/pexels-hoang-nc-483165236-19544248-200x150.jpg',
+      image: null,
     },
     {
       title: 'Five things to watch for in the March durable goods report',
       date: '2026-04-28',
       url: 'https://issuenumberone.journalism.cuny.edu/2026/04/28/five-things-to-watch-for-in-the-march-durable-goods-report-2/',
-      image: 'https://cdn.nycitynewsservice.com/blogs.dir/423/files/2026/05/work-progresses-at-boeing-south-carolina-an-assembly-site-for-boeings-commercial-dfc78c-1024-1-200x150.jpg',
+      image: null,
     },
   ];
 
