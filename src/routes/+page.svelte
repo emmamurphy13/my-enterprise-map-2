@@ -225,10 +225,10 @@
   const AQUARIUM_ID = 'TPN-255980';
 
   const fishSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
-    <path d="M22 16 L30 10 L26 16 L30 22 Z" fill="currentColor"/>
-    <ellipse cx="14" cy="16" rx="11" ry="7" fill="currentColor"/>
-    <circle cx="7" cy="13" r="3" fill="white"/>
-    <circle cx="8" cy="13" r="1.2" fill="currentColor" opacity="0.5"/>
+    <path d="M22 16 L30 10 L26 16 L30 22 Z" fill="currentColor" stroke="black" stroke-width="1.5" stroke-linejoin="round" paint-order="stroke"/>
+    <ellipse cx="14" cy="16" rx="11" ry="7" fill="currentColor" stroke="black" stroke-width="1.5" paint-order="stroke"/>
+    <circle cx="7" cy="13" r="3" fill="white" stroke="black" stroke-width="0.8"/>
+    <circle cx="8" cy="13" r="1.2" fill="black" opacity="0.4"/>
   </svg>`;
 
   const pointLayerData = $derived.by(() => ({
@@ -591,7 +591,7 @@
         <SvgIconLayer
           id="syracuse-aquarium"
           svgMarkup={fishSvg}
-          color="#16a34a"
+          color={statusColors.Completed}
           size={32}
           data={aquariumData}
           popup={buildPopup}
