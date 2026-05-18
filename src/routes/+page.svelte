@@ -8,6 +8,7 @@
   import Legend from '$lib/components/Maps/Legend.svelte';
   import Map from '$lib/components/Maps/Map.svelte';
   import MapLayer from '$lib/components/Maps/MapLayer.svelte';
+  import SvgIconLayer from '$lib/components/Maps/SvgIconLayer.svelte';
 
   import bundledPointsRaw from '$lib/data/arpa-project-points.geojson?raw';
   const bundledPoints = JSON.parse(bundledPointsRaw);
@@ -220,16 +221,31 @@
     filterBuildings = [];
   }
 
-  const FEATURED_IDS = new Set(['TPN-195614', 'TPN-255980', 'TPN-051622']);
+  const FEATURED_IDS = new Set(['TPN-195614', 'TPN-051622']);
+  const AQUARIUM_ID = 'TPN-255980';
+
+  const fishSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+    <path d="M22 16 L30 10 L26 16 L30 22 Z" fill="currentColor"/>
+    <ellipse cx="14" cy="16" rx="11" ry="7" fill="currentColor"/>
+    <circle cx="7" cy="13" r="3" fill="white"/>
+    <circle cx="8" cy="13" r="1.2" fill="currentColor" opacity="0.5"/>
+  </svg>`;
 
   const pointLayerData = $derived.by(() => ({
     type: 'FeatureCollection',
-    features: filteredFeatures.filter((f) => !FEATURED_IDS.has(f.properties.projectId)),
+    features: filteredFeatures.filter(
+      (f) => !FEATURED_IDS.has(f.properties.projectId) && f.properties.projectId !== AQUARIUM_ID
+    ),
   }));
 
   const featuredPointsData = $derived.by(() => ({
     type: 'FeatureCollection',
     features: filteredFeatures.filter((f) => FEATURED_IDS.has(f.properties.projectId)),
+  }));
+
+  const aquariumData = $derived.by(() => ({
+    type: 'FeatureCollection',
+    features: filteredFeatures.filter((f) => f.properties.projectId === AQUARIUM_ID),
   }));
 
   const highlightedFeature = $derived.by(
@@ -572,6 +588,14 @@
           popup={buildPopup}
         />
 
+        <SvgIconLayer
+          id="syracuse-aquarium"
+          svgMarkup={fishSvg}
+          color="#16a34a"
+          size={32}
+          data={aquariumData}
+          popup={buildPopup}
+        />
         <MapLayer
           id="highlighted-alabama-project-label"
           type="symbol"
