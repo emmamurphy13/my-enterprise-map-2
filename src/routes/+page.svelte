@@ -252,16 +252,6 @@
     () => filteredFeatures.find((f) => f.properties.projectId === highlightedProjectId) ?? null
   );
 
-  const highlightedLayerData = $derived.by(() => ({
-    type: 'FeatureCollection',
-    features: highlightedFeature ? [highlightedFeature] : [],
-  }));
-
-  const highlightedSpentLabel = $derived.by(() =>
-    highlightedFeature
-      ? `${formatCompactCurrency(highlightedFeature.properties.totalExpenditures)} spent`
-      : ''
-  );
 
   const totals = $derived.by(() =>
     filteredFeatures.reduce(
@@ -595,23 +585,6 @@
           size={32}
           data={aquariumData}
           popup={buildPopup}
-        />
-        <MapLayer
-          id="highlighted-alabama-project-label"
-          type="symbol"
-          data={highlightedLayerData}
-          layout={{
-            'text-field': highlightedSpentLabel,
-            'text-size': 12,
-            'text-offset': [0, 1.8],
-            'text-anchor': 'top',
-            'text-font': ['Open Sans Bold'],
-          }}
-          paint={{
-            'text-color': '#111827',
-            'text-halo-color': '#ffffff',
-            'text-halo-width': 1.1,
-          }}
         />
       </Map>
     {/if}
