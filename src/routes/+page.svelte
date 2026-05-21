@@ -237,7 +237,7 @@
 
   const AQUARIUM_ID = 'TPN-255980';
   const JAIL_ID = 'TPN-051622';
-  const COMMUNITY_CENTER_ID = 'TPN-195614';
+  const WEST_PEORIA_ID = 'TPN-282916';
 
   const fishSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
     <path d="M22 16 L30 10 L26 16 L30 22 Z" fill="currentColor" stroke="black" stroke-width="1.5" stroke-linejoin="round" paint-order="stroke"/>
@@ -274,7 +274,7 @@
     features: filteredFeatures.filter(
       (f) => f.properties.projectId !== AQUARIUM_ID
           && f.properties.projectId !== JAIL_ID
-          && f.properties.projectId !== COMMUNITY_CENTER_ID
+          && f.properties.projectId !== WEST_PEORIA_ID
     ),
   }));
 
@@ -288,9 +288,9 @@
     features: filteredFeatures.filter((f) => f.properties.projectId === JAIL_ID),
   }));
 
-  const communityCenterData = $derived.by(() => ({
+  const westPeoriaData = $derived.by(() => ({
     type: 'FeatureCollection',
-    features: filteredFeatures.filter((f) => f.properties.projectId === COMMUNITY_CENTER_ID),
+    features: filteredFeatures.filter((f) => f.properties.projectId === WEST_PEORIA_ID),
   }));
 
 
@@ -389,8 +389,8 @@
   <article class="article-column">
 
     <div class="intro-box">
-      <strong class="intro-box-headline">Local governments have 6 months to use ARPA dollars</strong>
-      <p class="intro-box-body">Many projects funded by former President Biden's stimulus package are still being constructed. If they don't spend their grants by the end of this year the federal government can take the money back. This map displays data reported to the U.S. treasury by local governments as of September 30, 2025.</p>
+      <strong class="intro-box-headline">This map displays data reported to the U.S. treasury by local governments as of September 30, 2025.</strong>
+      <p class="intro-box-body">Not all of these projects reflect the completion status of the projects that may seem correct (ie. the Syracuse Aquarium is not complete). Instead the map only records the construction stage in the Treasuries data.</p>
     </div>
 
     <section class="map-section" aria-label="All project points">
@@ -464,14 +464,6 @@
           popup={buildPopup}
         />
         <SvgIconLayer
-          id="weir-community-center"
-          svgMarkup={communityCenterSvg}
-          color={statusColors.Completed}
-          size={24}
-          data={communityCenterData}
-          popup={buildPopup}
-        />
-        <SvgIconLayer
           id="syracuse-aquarium"
           svgMarkup={fishSvg}
           color={statusColors.Completed}
@@ -485,6 +477,14 @@
           color="#FACC15"
           size={24}
           data={alabamaJailData}
+          popup={buildPopup}
+        />
+        <SvgIconLayer
+          id="west-peoria-city-hall"
+          svgMarkup={communityCenterSvg}
+          color="#FACC15"
+          size={24}
+          data={westPeoriaData}
           popup={buildPopup}
         />
       </Map>
@@ -510,44 +510,44 @@
     <div bind:this={articleBodyEl}>
     <ArticleBody>
       <p class="dropcap">
-        The 770 residents of Weir, Texas celebrated the opening of their brand new community center
-        about two years ago. Since then its aluminum structure has held many local parties and
-        community events and served as a designated shelter for prairie residents in the case of an
-        emergency.
-      </p>
-      <p>[Quote from Mayor]</p>
-      <p>
-        For a tiny town struggling with a tight budget, this small extravagance would usually be out
-        of reach, but in 2021 the American Plan Rescue Act awarded Weir with just over $131,000,
-        which it used to build this meeting center.
+        The residents of West Peoria, Illinois celebrated the opening of their brand new City Hall
+        about a year ago. For a tiny town struggling with a tight budget, this small extravagance
+        would usually be out of reach, but in 2021 the American Plan Rescue Act gave the town the
+        remaining money they needed to start the construction on the government building for which
+        they had been saving for 30 years.
       </p>
       <p>
-        While COVID relief money sounds like a superhero aid package with the purpose of healing
-        towns ravaged by COVID, places like Weir were well within their rights to use the funds for
-        infrastructure. In fact, the $1.9 trillion of ARPA funds, which were intended primarily to
-        stimulate a sleepy economy through investment, aided in the purchasing of materials and
-        employment of construction workers, helping fund over 200 new buildings projects like Weir's.
+        "It helped us to put on solar and geothermal," said Kinga Krider, the city administrator.
+        "This building is almost three times as big as our old building, but our utilities cost about
+        the same."
       </p>
       <p>
-        The problem: not all towns were as prompt in spending their money as Weir. Five years after
-        the grants were announced, many of the new buildings have yet to get off the ground. And in
-        some communities locals aren't upset about that, leading critics to question whether the
-        federal government should have even spent this money.
+        The City Hall has already hosted many baby showers and birthday parties and has a section
+        that memorializes veterans, something very important to the town. Krider said she's heard a
+        lot of positive feedback from her constituents.
       </p>
+      <p>
+        While the $1.9 billion in Covid relief money was primarily spent dealing with the ravages of
+        the Covid economic meltdown with increased unemployment benefits, states and cities received
+        $350 billion with the expectation that their tax revenues would also decline. But revenue
+        held up and governments were awash in money.
+      </p>
+      <p>
+        Though not the case with West Peoria's well-received City Hall, new construction projects
+        are actually some of the most controversial ways local governments spent ARPA money. While
+        new animal shelters, town halls and recreation centers popped up, less universally popular
+        projects like police stations and jails were also funded following the Black Lives Matter
+        protests. The federal government didn't place many restrictions so these investments were
+        totally allowable.
+      </p>
+
+      {@html `<iframe title="How state and local governments spent their stimulus" aria-label="Pie Chart" id="datawrapper-chart-eIEX8" src="https://datawrapper.dwcdn.net/eIEX8/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="602" data-external="1"></iframe>`}
+
       <p>
         "They just wanted to get the money out," said Bill Glasgall, Public Finance Adviser at The
         Volcker Alliance and Fellow at Penn Institute for Urban Research. "They aired on the side of
         generosity, and they were probably way too generous."
       </p>
-      <p>
-        Fully constructed or not, new construction projects are some of the most controversial ways
-        local governments spent ARPA money. While new animal shelters, town halls and recreation
-        centers popped up, less universally possible projects like police stations and jails were
-        also funded following the Black Lives Matter protests.
-      </p>
-
-      {@html `<iframe title="Types of Projects Built" aria-label="Bar Chart" id="datawrapper-chart-LQT60" src="https://datawrapper.dwcdn.net/LQT60/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="553" data-external="1"></iframe>`}
-
       <p>
         In Fall of 2021, Alabama announced that it would use $400 million of its ARPA grants to
         build two new prisons. Even for a red state as focused on public safety as Alabama, this
@@ -563,9 +563,7 @@
       <p>
         Still, outside of the protest from advocacy organizations, there hasn't been the outrage in
         Alabama that might have been felt in other states or cities. Mildred Warner, a Cornell
-        Professor of City and Regional planning, says that's by design. She also says that
-        progressive groups like SPLC and the ACLU might be less disturbed if they considered the
-        overall effect of the legislation and Alabama's general spending plans.
+        Professor of City and Regional planning, says that's by design.
       </p>
       <p>
         "You have to be politically savvy about the community you live in and what's going to work
@@ -573,14 +571,15 @@
         nonstarter, so lead with the jail."
       </p>
       <p>
-        States are required to keep their prisons in good condition, and Alabama's prisons needed
+        States are required to keep their prisons in good condition, and as the Justice Department's
+        suit against Alabama's Department of Corrections made clear in late 2020, its prisons needed
         renovation. Even Dees admits there are benefits for prisoners in a new correctional facility.
-        According to Warner's research, using ARPA funds publicly allowed Alabama to please their
+        But according to Warner's research, using ARPA funds publicly allowed Alabama to please their
         majority conservative constituents while also funding social services less publicly.
       </p>
       <p>
         Whether or not each project was well received is far from the only controversy surrounding
-        the Recovery Plan. Many economists, politicians and voters blame Biden's stimulus for
+        the Recovery Plan. Some economists, politicians and voters blame Biden's stimulus for
         inflation. While this is hotly debated and it's possible ARPA had some effect on inflation in
         America, most economists agree that it's unlikely that ARPA was the cause of rising prices
         that occurred around the globe, or even a major factor in rising prices in the pandemic-era
@@ -588,10 +587,11 @@
       </p>
       <p>
         But the plan has also been praised for helping to lower unemployment. After the money was
-        doled out, unemployment dropped rapidly, and while, again, it's unlikely that the stimulus
+        doled out, unemployment dropped rapidly, and while again, it's unlikely that the stimulus
         was the primary cause, it's also likely that it played a role. Take Alabama as an example –
-        the prisons are still being constructed and won't be finished until 2025. This gave builders,
-        contractors, architects and engineers a large, long-term project to work on.
+        the prisons are still being constructed and won't be finished until the final quarter of
+        2026. This gave builders, contractors, architects and engineers a large, long-term project
+        to work on.
       </p>
 
       {@html `<iframe title="Unemployment Rate" aria-label="Line chart" id="datawrapper-chart-LyjDA" src="https://datawrapper.dwcdn.net/LyjDA/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="394" data-external="1"></iframe>`}
@@ -603,13 +603,13 @@
         The Onondaga County Legislature announced the construction of an $85 million aquarium not
         long after the county was awarded with $89 million in pandemic relief funding. The underwater
         experience is set to open this Fall, and the $6.6 million of ARPA funds used for the aquarium
-        has been spent, but the building is far from being ready to hold fish.
+        has been spent.
       </p>
       <p>
-        But many residents are protesting not because they can't see an octopus – they're upset that
-        money that could have been spent on fixing the city's lead pipes or tackling poverty was used
-        on an investment they don't believe will bring new visitors and revenue to the city as the
-        County Executive promised.
+        But many residents are protesting not because they can't yet see an octopus at the still
+        unfinished aquarium. They're upset that money that could have been spent on fixing the
+        city's lead pipes or tackling poverty was used on an investment they don't believe will bring
+        new visitors and revenue to the city as the County Executive promised.
       </p>
       <p>
         "My grandchildren, they'll go to the aquarium once every two years," said Sharon Sherman, a
@@ -617,8 +617,8 @@
         better for my grandchildren growing up?"
       </p>
       <p>
-        Sherman and local politicians have voiced concerns about whether the county can afford
-        maintenance on the aquarium, but this isn't just a problem for Syracuse. The Government
+        Sherman and local politicians have also voiced concerns about whether the county can afford
+        maintenance on the aquarium. But this isn't just a problem for Syracuse. The Government
         Finance Officers Association advised against ARPA being used for investments that would
         require reoccurring investments. Fixing pot holes is a one-time expense, but the aquarium,
         jail and even community center will require additional maintenance – in some cases for
